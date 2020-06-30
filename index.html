@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel=stylesheet type="text/css" href="slick_click.css">
+    
+    <title>團體專題</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #my_section{
+            overflow: hidden;
+            width: 100%;
+        }
+        #section1{
+            width: 100%;
+            height: 100vh;
+            background-color: cadetblue;
+            display: flex;
+        }
+        #video{
+            width: 1850px;
+            height: 100%;
+            background-color: coral;
+            overflow: hidden;
+            position: relative;
+        
+        }
+        #video_size{
+            width: 100%;
+            position: absolute;
+            top:-50px;
+            /* 820  1080 */
+        }
+        #navbar{
+            width: 70px;
+            height: 100%;
+            background-color: rgb(180, 46, 46);
+            position: relative;
+            position:fixed;
+            top:0;
+            right: 0;
+            z-index: 10;
+        }
+        #burger{
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            margin: 10;
+            position: absolute;
+            top: 20px;
+            left: 15px;
+        }
+        #section2{
+            width: 100%;
+            height: 1525px;
+            background-color: rgb(124, 151, 70);
+        }
+        #container2{
+            width: 1560px;
+            height: 100%;
+            background-color: bisque;
+            margin: auto;
+            position: relative;
+            /* transform: translateX(-35px); */
+        }
+        #container2_title{
+            width: 390px;
+            height: 30px;
+            background-color: white;
+            position: absolute;
+            top: 130px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #container2_image1{
+            width: 825px;
+            height: 485px;
+            background-color: rgb(221, 145, 47);
+            position: absolute;
+            top: 295px;
+        }
+        #container2_image2{
+            width: 455px;
+            height: 280px;
+            background-color: rgb(221, 145, 47);
+            position: absolute;
+            right: 305px;
+            top: 980px;
+        }
+        #container2_font1{
+            width: 60px;
+            height: 300px;
+            position: absolute;
+            top: 325px;
+            right: 490px;
+            background-color: violet;
+        }
+        #container2_font1-L{
+            width: 20px;
+            height: 245px;
+            background-color: white;
+            position: absolute;
+            bottom: 0px;
+        }
+        #container2_font1-R{
+            width: 20px;
+            height: 225px;
+            background-color: wheat;
+            position: absolute;
+            right: 0px;
+        }
+        #container2_font2{
+            width: 310px;
+            height: 70px;
+            background-color: yellow;
+            position: absolute;
+            left: 257.5px;
+            top: 910px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #container2_font2-T{
+            width: 265px;
+            height: 20px;
+            background-color: white;
+        }
+        #container2_font2-B{
+            width: 310px;
+            height: 10px;
+            background-color: white;
+        }
+        #container2_font2-F{
+            width: 240px;
+            height: 10px;
+            background-color: white;
+        }
+        #container2_font3{
+            width: 220px;
+            height: 70px;
+            background-color: yellow;
+            position: absolute;
+            right: 0px;
+            top: 1050px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #container2_font3-T{
+            width: 185px;
+            height: 20px;
+            background-color: white;
+        }
+        #container2_font3-B{
+            width: 220px;
+            height: 10px;
+            background-color: white;
+        }
+        #container2_font3-F{
+            width: 170px;
+            height: 10px;
+            background-color: white;
+        }
+
+        #section3{
+            width: 100%;
+            height: 1137px;
+            background-color: darkgray;
+        }
+        #container3{
+            width: 1120px;
+            height: 100%;
+            background-color: darkcyan;
+            margin: auto;
+            position: relative;
+            padding-top: 130px;
+        }
+
+        .container3_circle_size{
+            width: 306px;
+            height: 306px;
+            border-radius: 50%;
+            background-color: blanchedalmond;
+        }
+        .container3_font_size{
+            width: 306px;
+            height: 70px;
+            background-color: cornflowerblue;
+        }
+        #container3_image_A , #container3_image_B{
+            width: 100%;
+            height: 306px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #container3_font_A, #container3_font_B{
+            width: 100%;
+            height: 70px;
+            background-color: cadetblue;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #container3_font_A{margin-bottom: 85px;}
+        #container3_font_B{margin-bottom: 130px;}
+
+        #container3_title{
+            width: 390px;
+            height: 33px;
+            background-color: white;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #section4{
+            width: 100%;
+            height: 1145px;
+            background-color: darkorange;
+        }
+        #container4{
+            width: 1120px;
+            height: 100%;
+            background-color: rgb(55, 107, 197);
+            margin: auto;
+            position: relative;
+        }
+        #container4_title{
+            width: 390px;
+            height: 33px;
+            background-color: cornsilk;
+            position: absolute;
+            top: 130px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        #container4_font1{
+            width: 23px;
+            height: 285px;
+            background-color: cornsilk;
+            position: absolute;
+            top: 293px;
+            left: 694px;
+        }
+        #container4_font2{
+            width: 145px;
+            height: 13px;
+            background-color: cornsilk;
+            position: absolute;
+            top: 630px;
+            right: 339px;
+
+        }
+        #container4_imageA{
+            position: absolute;
+            left: 0px;
+            top: 379px;
+            z-index: 2;
+        }
+        #container4_imageB{
+            width: 740px;
+            height: 330px;
+            display: flex;
+            position: absolute;
+            right: 0px;
+            top: 681px;
+            z-index: 1;
+
+            position: absolute;
+            justify-content: space-between;
+        }
+        #container4_button{
+            position: absolute;
+            top: 620px;
+            left: 369px;
+            display: flex;
+            z-index: 3;
+        }
+        #container4_more{
+            width: 160px;
+            height: 35px;
+            position: absolute;
+            top: 620px;
+            right: 0px;
+        }
+    /* ---------------------------*/
+        #section5{
+            width: 100%;
+            height: 1151px;
+            background-color: rgb(105, 75, 38);
+        }
+        #container5{
+            width: 1560px;
+            height: 100%;
+            background-color: burlywood;
+            margin: auto;
+            position: relative;
+        }
+
+        #container5_title{
+            width: 390px;
+            height: 33px;
+            background-color: antiquewhite;
+            position: absolute;
+            top: 130px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #container5_bg1{
+            width: 1920px;
+            height: 18px;
+            background-color: rgb(228, 192, 192);
+            position: absolute;
+            left: -180px;
+            top: 293px;
+        }
+        #container5_content{
+            width: 100%;
+            height: 460px;
+            background-color: cadetblue;
+            position: absolute;
+            top: 421px;
+            left: 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #container5_content1_title,
+        #container5_content2_title,
+        #container5_content3_title,
+        #container5_content4_title{
+            width: 330px;
+            height: 15px;
+            background-color: floralwhite;
+            margin-bottom: 43px;
+        }
+        #container5_content1_circle,
+        #container5_content2_circle,
+        #container5_content3_circle,
+        #container5_content4_circle{
+            width: 330px;
+            height: 330px;
+            background-color: gray;
+            border-radius: 50%;
+            margin-bottom: 27px;
+        }
+        #container5_content1_font,
+        #container5_content2_font,
+        #container5_content3_font,
+        #container5_content4_font{
+            width: 330px;
+            height: 45px;
+            background-color: indianred;
+        }
+        #container5_bg2{
+            width: 1920px;
+            height: 160px;
+            background-color: khaki;
+            position: absolute;
+            left: -180px;
+            top: 991px;
+        }
+
+
+
+        #section6{
+            width: 100%;
+            height: 1500px;
+            background-color: rgb(22, 175, 124);
+        }
+    </style>
+</head>
+<body>
+    <div id="my_section">
+        <div id="section1">
+            <div id="video">
+                <video id="video_size" loop="true" autoplay="autoplay"  muted="true">
+                    <source type="video/mp4" src="A.mp4"></source>
+                </video>
+             </div>   
+            <div id="navbar">
+                <div id="burger"></div>
+            </div>
+        </div>
+        <div id="section2">
+            <div id="container2">
+                <div id="container2_title"></div>
+                <div id="container2_font1">
+                    <div id="container2_font1-L"></div>
+                    <div id="container2_font1-R"></div>
+                </div>
+                <div id="container2_font2">
+                    <div id="container2_font2-T"></div>
+                    <div id="container2_font2-B"></div>
+                    <div id="container2_font2-F"></div>
+                </div>
+                <div id="container2_font3">
+                    <div id="container2_font3-T"></div>
+                    <div id="container2_font3-B"></div>
+                    <div id="container2_font3-F"></div>
+                </div>
+                <div id="container2_image1"></div>
+                <div id="container2_image2">
+                </div>
+            </div>
+        </div>
+        <div id="section3">
+            <div id="container3">
+                <div id="container3_image_A">
+                    <div id="container3_image1" class="container3_circle_size"></div>
+                    <div id="container3_image2" class="container3_circle_size"></div>
+                    <div id="container3_image3" class="container3_circle_size"></div>
+                </div>
+                <div id="container3_font_A">
+                    <div id="container3_font1" class="container3_font_size"></div>
+                    <div id="container3_font2" class="container3_font_size"></div>
+                    <div id="container3_font3" class="container3_font_size"></div>
+                </div>
+                <div id="container3_image_B">
+                    <div id="container3_image4" class="container3_circle_size"></div>
+                    <div id="container3_image5" class="container3_circle_size"></div>
+                    <div id="container3_image6" class="container3_circle_size"></div>
+                </div>
+                <div id="container3_font_B">
+                    <div id="container3_font4" class="container3_font_size"></div>
+                    <div id="container3_font5" class="container3_font_size"></div>
+                    <div id="container3_font6" class="container3_font_size"></div>
+                </div>
+                <div id="container3_title"></div>
+            </div>
+        </div>
+        <div id="section4">
+            <div id="container4">
+                <div id="container4_title"></div>
+                <div id="container4_font1"></div>
+                <div id="container4_font2"></div>
+                <div id="container4_imageA">
+                    <div class="slider1">
+                        <img src=".\和服畫廊\k10409.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10410.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10412.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10413.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10414.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10415.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10416.jpg" alt="" srcset="">
+                    </div>       
+                </div>
+                <div id="container4_imageB">
+                    <div class="slider2">
+                        
+                        <img src=".\和服畫廊\k10410.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10412.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10413.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10414.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10415.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10416.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10409.jpg" alt="" srcset="">
+                       
+                    </div>
+                    <div class="slider3">
+                        
+                        <img src=".\和服畫廊\k10412.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10413.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10414.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10415.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10416.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10409.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10410.jpg" alt="" srcset="">
+                    
+                    </div>
+                    <div class="slider4" >
+                        
+                        <img src=".\和服畫廊\k10413.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10414.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10415.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10416.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10409.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10410.jpg" alt="" srcset="">
+                        <img src=".\和服畫廊\k10412.jpg" alt="" srcset="">
+                        
+                    </div>
+                </div>
+                <div id="container4_button">
+                    <div id="buttonn" style="width: 35px; height: 35px; background-color: aqua; color: rgb(136, 120, 57); font-size: 20px; margin-right: 8px;">next</div>
+                    <div id="buttonp" style="width: 35px; height: 35px; background-color: blueviolet; color: rgb(168, 152, 87); font-size: 20px;">prev</div>
+                </div>
+                <input id="container4_more" type="button" value="MORE">
+            </div>
+        </div>
+        <div id="section5">
+            <div id="container5">
+                <div id="container5_title"></div>
+                <div id="container5_bg1"></div>
+                <div id="container5_bg2"></div>
+                <div id="container5_content">
+                    <div id="container5_content1">
+                        <div id="container5_content1_title"></div>
+                        <div id="container5_content1_circle"></div>
+                        <div id="container5_content1_font"></div>
+                    </div>
+                    <div id="container5_content2">
+                        <div id="container5_content2_title"></div>
+                        <div id="container5_content2_circle"></div>
+                        <div id="container5_content2_font"></div>
+                    </div>
+                    <div id="container5_content3">
+                        <div id="container5_content3_title"></div>
+                        <div id="container5_content3_circle"></div>
+                        <div id="container5_content3_font"></div>
+                    </div>
+                    <div id="container5_content4">
+                        <div id="container5_content4_title"></div>
+                        <div id="container5_content4_circle"></div>
+                        <div id="container5_content4_font"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section6">
+            <div id="container6"></div>
+        </div>
+    </div>
+<!-- ------------------------------------ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="slick_click.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        $('.slider1').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            draggable: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor:[$('.slider2'),$('.slider3'),$('.slider4')],
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            // nextArrow:'#buttonn',
+            // prevArrow:'#buttonp',
+            responsive: [{
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            ],
+        });
+        $('#buttonn').click(function(){
+            // alert('hi');
+            $('.slider1').slick('slickNext');
+            $('.slider2').slick('slickNext');
+            $('.slider3').slick('slickNext');
+            $('.slider4').slick('slickNext');
+        });
+        $('#buttonp').click(function(){
+            // alert('hi');
+            $('.slider1').slick('slickPrev');
+            $('.slider2').slick('slickPrev');
+            $('.slider3').slick('slickPrev');
+            $('.slider4').slick('slickPrev');
+        });
+
+        // $('.slider1').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        // console.log(123);
+        // $('.slider1').slick('slickNext');
+        // $('.slider2').slick('slickNext');
+        // $('.slider3').slick('slickNext');
+        // });
+
+        // $('#buttonp').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        // console.log(123);
+        // $('.slider1').slick('slickPrev');
+        // $('.slider2').slick('slickPrev');
+        // $('.slider3').slick('slickPrev');
+        // });
+    });
+    </script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.slider2').slick({
+                dots: false,
+                infinite: true,
+                draggable: false,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 2000,
+                arrows: false,
+                responsive: [{
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+    </script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.slider3').slick({
+                dots: false,
+                infinite: true,
+                draggable: false,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 2000,
+                arrows: false,
+                responsive: [{
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+    </script>
+     <script>
+        jQuery(document).ready(function ($) {
+            $('.slider4').slick({
+                dots: false,
+                infinite: true,
+                draggable: false,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 2000,
+                arrows: false,
+                responsive: [{
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+    </script>
+</body>
+</html>
