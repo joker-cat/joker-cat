@@ -19,6 +19,25 @@
             margin: 0;
             padding: 0;
         }
+        #QQ{
+           
+        }
+        #menu{
+            width: 0%;
+            /* max-width: calc(100% - 70px); */
+            height: 0vh;
+            background-color: rgb(37, 35, 37);
+            border: 20px solid rgb(193, 206, 204);
+            /* transition-duration: 3s; */
+            display: none;
+            position:fixed;
+            top: 0;
+            right: 0px;
+            opacity: 0.9;
+            filter: alpha(opacity(90));
+            z-index: 50;
+        }
+
         #my_section{
             overflow: hidden;
             width: 100%;
@@ -539,6 +558,9 @@
     </style>
 </head>
 <body>
+    <div id="QQ">
+        <div id="menu"></div>
+    </div>    
     <div id="my_section">
         <div id="section1">
             <div id="video">
@@ -955,6 +977,12 @@
                     }
                 }]
             });
+        });
+    </script>
+    <script>
+        $('#burger').click(function(){
+            $('#menu').css("display","block");
+            $('#menu').animate({height:'100vh',width:'760px'},500);
         });
     </script>
 </body>
