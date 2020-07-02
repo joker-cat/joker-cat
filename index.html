@@ -1,686 +1,1768 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-    <link rel=stylesheet type="text/css" href="slick_click.css">
-    
-    <title>團體專題</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="parallax.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="4.css">
+    <link rel="stylesheet" href="parallax.css">
+    <link rel="stylesheet" href="parallax.js">
+    <link rel="stylesheet" href="swiper_style.css">
+    <link rel="stylesheet" href="swiper_style_A.css">
+    <link rel="stylesheet" href="svg_circle.css">
+    <link rel="stylesheet" href="lightbox_ok.css">
+    <!-- <link rel="stylesheet" href="lightbox.css"> -->
+    <link rel="stylesheet" href="tab.css">
+
+    <title>〃花花草草〃</title>
     <style>
-        *{
+        * {
             box-sizing: border-box;
         }
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        #my_section{
-            overflow: hidden;
-            width: 100%;
-        }
-        #section1{
-            width: 100%;
-            height: 100vh;
-            background-color: cadetblue;
-            display: flex;
-        }
-        #video{
-            width: 1850px;
-            height: 100%;
-            background-color: coral;
-            overflow: hidden;
-            position: relative;
-        
-        }
-        #video_size{
-            width: 100%;
-            position: absolute;
-            top:-50px;
-            /* 820  1080 */
-        }
-        #navbar{
-            width: 70px;
-            height: 100%;
-            background-color: rgb(180, 46, 46);
-            position: relative;
-            position:fixed;
-            top:0;
-            right: 0;
-            z-index: 10;
-        }
-        #burger{
-            width: 40px;
-            height: 40px;
-            background-color: white;
-            margin: 10;
-            position: absolute;
-            top: 20px;
-            left: 15px;
-        }
-        #section2{
-            width: 100%;
-            height: 1525px;
-            background-color: rgb(124, 151, 70);
-        }
-        #container2{
-            width: 1560px;
-            height: 100%;
-            background-color: bisque;
-            margin: auto;
-            position: relative;
-            /* transform: translateX(-35px); */
-        }
-        #container2_title{
-            width: 390px;
-            height: 30px;
-            background-color: white;
-            position: absolute;
-            top: 130px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        #container2_image1{
-            width: 825px;
-            height: 485px;
-            background-color: rgb(221, 145, 47);
-            position: absolute;
-            top: 295px;
-        }
-        #container2_image2{
-            width: 455px;
-            height: 280px;
-            background-color: rgb(221, 145, 47);
-            position: absolute;
-            right: 305px;
-            top: 980px;
-        }
-        #container2_font1{
-            width: 60px;
-            height: 300px;
-            position: absolute;
-            top: 325px;
-            right: 490px;
-            background-color: violet;
-        }
-        #container2_font1-L{
-            width: 20px;
-            height: 245px;
-            background-color: white;
-            position: absolute;
-            bottom: 0px;
-        }
-        #container2_font1-R{
-            width: 20px;
-            height: 225px;
-            background-color: wheat;
-            position: absolute;
-            right: 0px;
-        }
-        #container2_font2{
-            width: 310px;
-            height: 70px;
-            background-color: yellow;
-            position: absolute;
-            left: 257.5px;
-            top: 910px;
 
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #section_constellation {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
         }
-        #container2_font2-T{
-            width: 265px;
-            height: 20px;
-            background-color: white;
-        }
-        #container2_font2-B{
-            width: 310px;
-            height: 10px;
-            background-color: white;
-        }
-        #container2_font2-F{
-            width: 240px;
-            height: 10px;
-            background-color: white;
-        }
-        #container2_font3{
-            width: 220px;
-            height: 70px;
-            background-color: yellow;
+
+        #cursor {
             position: absolute;
-            right: 0px;
-            top: 1050px;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        #container2_font3-T{
-            width: 185px;
-            height: 20px;
-            background-color: white;
-        }
-        #container2_font3-B{
-            width: 220px;
-            height: 10px;
-            background-color: white;
-        }
-        #container2_font3-F{
-            width: 170px;
-            height: 10px;
-            background-color: white;
-        }
-
-        #section3{
-            width: 100%;
-            height: 1137px;
-            background-color: darkgray;
-        }
-        #container3{
-            width: 1120px;
-            height: 100%;
-            background-color: darkcyan;
-            margin: auto;
-            position: relative;
-            padding-top: 130px;
-        }
-
-        .container3_circle_size{
-            width: 306px;
-            height: 306px;
+            width: 100px;
+            height: 100px;
+            border: 5px solid rgb(241, 189, 189);
             border-radius: 50%;
-            background-color: blanchedalmond;
+            transition-duration: 0.7s;
+            transform: translate(-50px, -50px);
+            pointer-events: none;
+            z-index: 1000;
         }
-        .container3_font_size{
-            width: 306px;
-            height: 70px;
-            background-color: cornflowerblue;
-        }
-        #container3_image_A , #container3_image_B{
+
+        #navbar {
             width: 100%;
-            height: 306px;
-            display: flex;
-            justify-content: space-between;
-        }
-        #container3_font_A, #container3_font_B{
-            width: 100%;
-            height: 70px;
-            background-color: cadetblue;
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-        #container3_font_A{margin-bottom: 85px;}
-        #container3_font_B{margin-bottom: 130px;}
-
-        #container3_title{
-            width: 390px;
-            height: 33px;
-            background-color: white;
-            position: absolute;
-            top: 0px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        #section4{
-            width: 100%;
-            height: 1145px;
-            background-color: darkorange;
-        }
-        #container4{
-            width: 1120px;
-            height: 100%;
-            background-color: rgb(55, 107, 197);
-            margin: auto;
-            position: relative;
-        }
-        #container4_title{
-            width: 390px;
-            height: 33px;
-            background-color: cornsilk;
-            position: absolute;
-            top: 130px;
-            left: 50%;
-            transform: translate(-50%);
-        }
-        #container4_font1{
-            width: 23px;
-            height: 285px;
-            background-color: cornsilk;
-            position: absolute;
-            top: 293px;
-            left: 694px;
-        }
-        #container4_font2{
-            width: 145px;
-            height: 13px;
-            background-color: cornsilk;
-            position: absolute;
-            top: 630px;
-            right: 339px;
-
-        }
-        #container4_imageA{
-            position: absolute;
-            left: 0px;
-            top: 379px;
-            z-index: 2;
-        }
-        #container4_imageB{
-            width: 740px;
-            height: 330px;
-            display: flex;
-            position: absolute;
-            right: 0px;
-            top: 681px;
-            z-index: 1;
-
-            position: absolute;
-            justify-content: space-between;
-        }
-        #container4_button{
-            position: absolute;
-            top: 620px;
-            left: 369px;
-            display: flex;
-            z-index: 3;
-        }
-        #container4_more{
-            width: 160px;
-            height: 35px;
-            position: absolute;
-            top: 620px;
-            right: 0px;
-        }
-    /* ---------------------------*/
-        #section5{
-            width: 100%;
-            height: 1151px;
-            background-color: rgb(105, 75, 38);
-        }
-        #container5{
-            width: 1560px;
-            height: 100%;
-            background-color: burlywood;
-            margin: auto;
-            position: relative;
-        }
-
-        #container5_title{
-            width: 390px;
-            height: 33px;
+            height: 100px;
             background-color: antiquewhite;
-            position: absolute;
-            top: 130px;
-            left: 50%;
-            transform: translateX(-50%);
         }
 
-        #container5_bg1{
-            width: 1920px;
-            height: 18px;
-            background-color: rgb(228, 192, 192);
-            position: absolute;
-            left: -180px;
-            top: 293px;
-        }
-        #container5_content{
+        #round_image {
             width: 100%;
-            height: 460px;
-            background-color: cadetblue;
-            position: absolute;
-            top: 421px;
-            left: 0px;
+            height: calc(100vh - 100px);
+            background-color: rgb(250, 235, 177);
+            display: flex;
+            justify-content: center;
+        }
+
+        #round_image_content {
+            width: 1920px;
+            height: 100vh;
+            background-color: rgb(67, 105, 67);
             display: flex;
             justify-content: space-between;
         }
-        #container5_content1_title,
-        #container5_content2_title,
-        #container5_content3_title,
-        #container5_content4_title{
-            width: 330px;
-            height: 15px;
-            background-color: floralwhite;
-            margin-bottom: 43px;
+
+        #round_image_content_left {
+            width: 500px;
+            height: 100%;
+            background-color: darkseagreen;
         }
-        #container5_content1_circle,
-        #container5_content2_circle,
-        #container5_content3_circle,
-        #container5_content4_circle{
-            width: 330px;
-            height: 330px;
-            background-color: gray;
-            border-radius: 50%;
-            margin-bottom: 27px;
+
+        #round_image_content_right {
+            width: 1420px;
+            height: 100%;
+            background-color: rgb(197, 195, 190);
+
+            z-index: 100;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        #container5_content1_font,
-        #container5_content2_font,
-        #container5_content3_font,
-        #container5_content4_font{
-            width: 330px;
-            height: 45px;
-            background-color: indianred;
-        }
-        #container5_bg2{
-            width: 1920px;
-            height: 160px;
-            background-color: khaki;
+
+        /* .round_image_content_right_section {
             position: absolute;
-            left: -180px;
-            top: 991px;
+            width: 650px;
+            height: 90vh;
+            opacity: 1;
+        } */
+
+        /* .round_image_content_right_section {
+            animation: image_round 25s linear infinite;
         }
 
+        .round_image_content_right_section:nth-child(1) {
+            background-image: url('image_D.jpg');
+            animation-delay: 0s;
+        }
 
+        .round_image_content_right_section:nth-child(2) {
+            background-image: url('image_E.jpg');
+            animation-delay: 5s;
+        }
 
-        #section6{
+        .round_image_content_right_section:nth-child(3) {
+            background-image: url('image_F.jpg');
+            animation-delay: 10s;
+        }
+
+        .round_image_content_right_section:nth-child(4) {
+            background-image: url('image_G.jpg');
+            animation-delay: 15s;
+        }
+
+        .round_image_content_right_section:nth-child(5) {
+            background-image: url('image_H.jpg');
+            animation-delay: 20s;
+        } */
+
+        /* ----------------------- */
+
+        #banner {
             width: 100%;
-            height: 1500px;
-            background-color: rgb(22, 175, 124);
+            height: 100vh;
+            background-color: blanchedalmond;
+            margin-top: 100px;
+
         }
+
+        #banner_content {
+            width: 1500px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(250, 219, 171);
+            margin: auto;
+            padding: 50px 0 0 0;
+        }
+
+        #banner_img {
+            width: 50%;
+            height: 100%;
+            background-color: rgb(250, 240, 240);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .img_A {
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+            transform: scale(1);
+            position: absolute;
+        }
+
+        #banner_img_font {
+            width: 50%;
+            height: 100%;
+            background-color: rgb(250, 240, 240);
+        }
+
+        .img_set {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img_A.bigger {
+            /* animation-direction: normal; */
+            /*循環*/
+            /* animation-name: imgA_bigger; */
+            /*跑的動畫名稱*/
+            /* animation-duration: 1s; */
+            /*動畫時間*/
+            /* animation-iteration-count: 1; */
+            /*播放次數*/
+            /* animation-fill-mode: forwards; */
+
+            transform: scale(1.05);
+        }
+
+        /* .img_A.smaller { */
+        /* animation-direction: normal; */
+        /*播放方式-一般*/
+        /* animation-name: imgA_smaller; */
+        /*跑的動畫名稱*/
+        /* animation-duration: 1s; */
+        /*動畫時間*/
+        /* animation-iteration-count: 1; */
+        /*播放次數*/
+        /* animation-fill-mode: forwards; */
+        /*結束停在最後*/
+        /* } */
+
+        #container {
+            width: 1500px;
+            background-color: cadetblue;
+            margin: auto;
+        }
+
+        .image_overflow {
+            width: 100%;
+            height: 650px;
+            overflow: hidden;
+            margin-bottom: 50px;
+            border-radius: 30px;
+            position: relative;
+        }
+
+        .gray_cover {
+            width: 100%;
+            height: 0%;
+            background-color: gray;
+            filter: alpha(opacity(15));
+            opacity: 0.15;
+            top: 50%;
+            position: absolute;
+            transform: translateY(-50%);
+            /* 自身高度 */
+            z-index: 50;
+            transition: 1s;
+
+        }
+
+        .image_overflow:hover .gray_cover {
+            height: 100%;
+        }
+
+        #section1 {
+
+            width: 1500px;
+            height: 1500px;
+            background-color: rgb(192, 219, 238);
+            display: flex;
+            justify-content: space-between;
+            margin-top: 150px;
+
+        }
+
+        #section1_content {
+            width: 31%;
+            margin-top: 30px;
+            background-color: rgb(95, 175, 175);
+            transition: 1s;
+        }
+
+        #section1_image {
+            width: 120%;
+            height: 120%;
+            background-color: bisque;
+            background-image: url('image_A.jpg');
+            overflow: hidden;
+        }
+
+        .image_overflow:hover #section1_image {
+            transition: 1s;
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        #section1_font {
+            width: 100%;
+            height: 500px;
+            background-color: burlywood;
+            padding: 10px;
+        }
+
+
+        #section2_content {
+            width: 31%;
+            margin-top: 80px;
+            background-color: rgb(27, 114, 114);
+            transition: 1s;
+        }
+
+        #section2_image {
+            width: 100%;
+            height: 650px;
+            background-color: bisque;
+            background-image: url('image_B.jpg');
+
+        }
+
+        .image_overflow:hover #section2_image {
+            transition: 1s;
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        #section2_font {
+            width: 100%;
+            height: 500px;
+            background-color: burlywood;
+            padding: 10px;
+        }
+
+        #section3_content {
+            width: 31%;
+            margin-top: 130px;
+            background-color: rgb(77, 143, 143);
+            transition: 1s;
+        }
+
+        #section3_image {
+            width: 100%;
+            height: 650px;
+            background-color: bisque;
+            background-image: url('image_C.jpg');
+
+        }
+
+        .image_overflow:hover #section3_image {
+            transition: 1s;
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        #section3_font {
+            width: 100%;
+            height: 500px;
+            background-color: burlywood;
+            padding: 10px;
+        }
+
+
+        /* #section2 {
+            width: 1500px;
+            height: 1000px;
+            background-color: rgb(230, 223, 223);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #section3 {
+            width: 1500px;
+            height: 1000px;
+            background-color: rgb(247, 242, 242);
+            display: flex;
+            justify-content: space-between;
+        } */
+
+        #section_constellation {
+            width: 1500px;
+            height: 600px;
+            background-color: rgb(216, 212, 212);
+            margin-top: 200px;
+        }
+
+        #section4 {
+            width: 1500px;
+            height: 1000px;
+            background-color: rgb(235, 227, 227);
+            color: cadetblue;
+        }
+        #section4_content{
+            width: 1500px;
+            height: 100%;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #footer {
+            width: 100%;
+            background-color: darkgrey;
+        }
+
+        p {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        @keyframes imgA_bigger {
+            0% {
+                opacity: 1;
+                /*透明度*/
+                transform: scale3d(1, 1, 1);
+                /*XYZ放大縮小*/
+            }
+
+            100% {
+                opacity: 0.8;
+                transform: scale3d(1.05, 1.05, 1.05);
+            }
+        }
+
+        @keyframes imgA_smaller {
+            0% {
+                opacity: 1;
+                transform: scale3d(1.05, 1.05, 1.05);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        /* @keyframes image_round {
+            4% {
+                opacity: 1;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            24% {
+                opacity: 0;
+            }
+        } */
     </style>
 </head>
+
 <body>
-    <div id="my_section">
+    <!-- 圖片放大縮小事件 -->
+    <script>
+        window.addEventListener('scroll', () => {
+            var img_A = document.querySelector("#img_A")
+            var scrolled = window.scrollY;
+            console.log(window.scrollY)
+
+            // if(scrolled >= 1430){
+            //     scorlled*0.01
+            // }else{
+            //     scorlled*0.02
+            // }
+
+            if (scrolled >= 100) {
+                img_A.classList.add("bigger");
+                // console.log("100");
+            }
+            if (scrolled >= 700) {
+                img_A.classList.remove("bigger");
+                // img_A.classList.add("smaller");
+                // console.log("700");
+            }
+        });
+    </script>
+    <!-- ----------------------- -->
+    <!--引用AOS效果-->
+    <script>AOS.init();</script>
+    <!-- ------------- -->
+    <div id="cursor"></div>
+    <div id="navbar">
+        <header class="block">
+            <ul class="header-menu horizontal-list">
+                <li>
+                    <a class="header-menu-tab" href="#1"><span
+                            class="icon entypo-cog scnd-font-color"></span>Settings</a>
+                </li>
+                <li>
+                    <a class="header-menu-tab" href="#2"><span
+                            class="icon fontawesome-user scnd-font-color"></span>Account</a>
+                </li>
+                <li>
+                    <a class="header-menu-tab" href="#3"><span
+                            class="icon fontawesome-envelope scnd-font-color"></span>Messages</a>
+                    <a class="header-menu-number" href="#4">5</a>
+                </li>
+                <li>
+                    <a class="header-menu-tab" href="#5"><span
+                            class="icon fontawesome-star-empty scnd-font-color"></span>Favorites</a>
+                </li>
+            </ul>
+            <div class="profile-menu">
+                <p>Me <a href="#26"><span class="entypo-down-open scnd-font-color"></span></a></p>
+                <div class="profile-picture small-profile-picture">
+                    <img width="40px" alt="Anne Hathaway picture"
+                        src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Anne_Hathaway_Face.jpg">
+                </div>
+            </div>
+        </header>
+    </div>
+    <div id="round_image">
+        <div id="round_image_content">
+            <div id="round_image_content_left">
+
+            </div>
+            <div id="round_image_content_right">
+
+
+
+                <!-- <div class="swiper-container" id="swiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
+                      <div class="swiper-slide">Slide 10</div>
+                    </div>
+                    
+                    <div class="swiper-pagination1"></div>
+                   
+                    <div class="swiper-button-next1"></div>
+                    <div class="swiper-button-prev1"></div>
+                  </div> -->
+                <!-- <div class="round_image_content_right_section img_set"></div> -->
+                <!-- <div class="round_image_content_right_section img_set"></div>
+                <div class="round_image_content_right_section img_set"></div>
+                <div class="round_image_content_right_section img_set"></div>
+                <div class="round_image_content_right_section img_set"></div> -->
+                <!-- <div id="circle">
+                    <svg x="0px" y="0px" width="100px" height="100px">
+                        <circle class="path1" stroke="#FFBB66" fill="none" stroke-width="3" cx="50" cy="50" r="30" />
+                    </svg>
+                    <svg x="0px" y="0px" width="100px" height="100px">
+                        <circle class="path2" stroke="#FFBB66" fill="none" stroke-width="3" cx="50" cy="50" r="30" />
+                    </svg>
+                    <svg x="0px" y="0px" width="100px" height="100px">
+                        <circle class="path3" stroke="#FFBB66" fill="none" stroke-width="3" cx="50" cy="50" r="30" />
+                    </svg>
+                    <svg x="0px" y="0px" width="100px" height="100px">
+                        <circle class="path4" stroke="#FFBB66" fill="none" stroke-width="3" cx="50" cy="50" r="30" />
+                    </svg>
+                    <svg x="0px" y="0px" width="100px" height="100px">
+                        <circle class="path5" stroke="#FFBB66" fill="none" stroke-width="3" cx="50" cy="50" r="30" />
+                    </svg>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div id="banner">
+        <div id="banner_content">
+            <div id="banner_img">
+                <img src="20000.jpg" id="img_A" class="img_set img_A">
+            </div>
+            <div id="banner_img_font">
+            </div>
+        </div>
+    </div>
+    <div id="container">
         <div id="section1">
-            <div id="video">
-                <video id="video_size" loop="true" autoplay="autoplay"  muted="true">
-                    <source type="video/mp4" src="A.mp4"></source>
-                </video>
-             </div>   
-            <div id="navbar">
-                <div id="burger"></div>
-            </div>
-        </div>
-        <div id="section2">
-            <div id="container2">
-                <div id="container2_title"></div>
-                <div id="container2_font1">
-                    <div id="container2_font1-L"></div>
-                    <div id="container2_font1-R"></div>
+            <div id="section1_content">
+                <div class="image_overflow">
+                    <div class="gray_cover"></div>
+                    <div id="section1_image" data-aos="fade-up" data-aos-duration="500" class="img_set"></div>
                 </div>
-                <div id="container2_font2">
-                    <div id="container2_font2-T"></div>
-                    <div id="container2_font2-B"></div>
-                    <div id="container2_font2-F"></div>
-                </div>
-                <div id="container2_font3">
-                    <div id="container2_font3-T"></div>
-                    <div id="container2_font3-B"></div>
-                    <div id="container2_font3-F"></div>
-                </div>
-                <div id="container2_image1"></div>
-                <div id="container2_image2">
+                <div id="section1_font" data-aos="fade-up" data-aos-duration="500">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, voluptate laboriosam. Itaque
+                        culpa
+                        adipisci nemo quo, eum corporis soluta libero. Facilis aliquid in nesciunt, vel eius omnis ipsa
+                        doloribus sunt?</p>
                 </div>
             </div>
+            <div id="section2_content">
+                <div class="image_overflow">
+                    <div class="gray_cover"></div>
+                    <div id="section2_image" data-aos="fade-up" data-aos-duration="650" class="img_set"></div>
+                </div>
+                <div id="section2_font" data-aos="fade-up" data-aos-duration="650">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, voluptate laboriosam. Itaque
+                        culpa
+                        adipisci nemo quo, eum corporis soluta libero. Facilis aliquid in nesciunt, vel eius omnis ipsa
+                        doloribus sunt?</p>
+                </div>
+            </div>
+            <div id="section3_content">
+                <div class="image_overflow">
+                    <div class="gray_cover"></div>
+                    <div id="section3_image" data-aos="fade-up" data-aos-duration="800" class="img_set"></div>
+                </div>
+                <div id="section3_font" data-aos="fade-up" data-aos-duration="800">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, voluptate laboriosam. Itaque
+                        culpa
+                        adipisci nemo quo, eum corporis soluta libero. Facilis aliquid in nesciunt, vel eius omnis ipsa
+                        doloribus sunt?</p>
+                </div>
+            </div>
         </div>
-        <div id="section3">
-            <div id="container3">
-                <div id="container3_image_A">
-                    <div id="container3_image1" class="container3_circle_size"></div>
-                    <div id="container3_image2" class="container3_circle_size"></div>
-                    <div id="container3_image3" class="container3_circle_size"></div>
+        <!-- <div id="section2"></div>
+        <div id="section3"> </div> -->
+        <div id="section_constellation">
+            <!-- Swiper -->
+            <div class="swiper-container" id="swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="imgbx">
+                            <img src="星座/魔羯.jpg">
+                        </div>
+                        <div class="dateils" data-aos="fade-up">
+                            <div class="dateils_container">
+                                <h3>魔羯座<br><span>Capricorn</span></h3>
+                                <button class="lightbox-button">Open Lightbox</button>
+
+                                <div class="lightbox" style="display: None;">
+                                    <div class="lightbox-container">
+                                        <div class="lightbox-header">
+                                            <p>C L O S E</p>
+                                        </div>
+                                        <div class="lightbox-card">
+                                            <img src="12_images/Capricorn.jpg">
+                                            <div class="lightbox-card-font">
+                                                <div class="lightbox-card-font-1">
+                                                    <p class="lightbox-card-font-1-1">三色堇</p>
+                                                    <p class="lightbox-card-font-1-2">「想念、思慕」</p>
+                                                </div>
+                                                <div class="lightbox-card-font-2"></div>
+                                                    <p class="lightbox-card-font-2-1">耐力強、固執的魔羯座相似。三色堇主要有紫、白、黃三種顏色，會隨着季節轉變而開得更大多更燦爛，除了觀賞外，還可以食用或裝飾甜點。正如勤奮的摩羯座一樣，隨着年紀漸長，亦會不斷進步，遇強越強。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbx">
+                            <img src="星座/水瓶.jpg">
+                        </div>
+                        <div class="dateils" data-aos="fade-up">
+                            <div class="dateils_container">
+                                <h3>水瓶座<br><span>Aquarius</span></h3>
+                                <button class="lightbox-button">Open Lightbox</button>
+
+                                <div class="lightbox" style="display: None;">
+                                    <div class="lightbox-container">
+                                        <div class="lightbox-header">
+                                            <p>C L O S E</p>
+                                        </div>
+                                        <div class="lightbox-card">
+                                            <img src="12_images/AQUARIUS.jpg">
+                                            <div class="lightbox-card-font">
+                                                <div class="lightbox-card-font-1">
+                                                    <p class="lightbox-card-font-1-1">蘭花</p>
+                                                    <p class="lightbox-card-font-1-2">「純樸、高潔」</p>
+                                                </div>
+                                                <div class="lightbox-card-font-2"></div>
+                                                    <p class="lightbox-card-font-2-1">水瓶座為人簡單、善變，很容易被身邊的環境影響心情，面對著令自己開心的朋友，會精力充沛、笑顏逐開。蘭花屬於眾多開花植物中，最多樣的一種品種之一，而花語有「純樸、高潔」的意思。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbx">
+                            <img src="星座/雙魚.jpg">
+                        </div>
+                        <div class="dateils" data-aos="fade-up">
+                            <div class="dateils_container">
+                                <h3>雙魚座<br><span>Pisces</span></h3>
+                                <button class="lightbox-button">Open Lightbox</button>
+
+                                <div class="lightbox" style="display: None;">
+                                    <div class="lightbox-container">
+                                        <div class="lightbox-header">
+                                            <p>C L O S E</p>
+                                        </div>
+                                        <div class="lightbox-card">
+                                            <img src="12_images/PISCES.jpg">
+                                            <div class="lightbox-card-font">
+                                                <div class="lightbox-card-font-1">
+                                                    <p class="lightbox-card-font-1-1">睡蓮花</p>
+                                                    <p class="lightbox-card-font-1-2">「潔凈、純真」</p>
+                                                </div>
+                                                <div class="lightbox-card-font-2"></div>
+                                                    <p class="lightbox-card-font-2-1">有藝術天賦，對生活的想法有點異想天開、但有時性格有點難捉摸的雙魚座，跟睡蓮花的成長環境有點類似。就像無憂無慮地浮在水池中，輕易跟身邊的事物融入，所以亦有「花中睡美人」的稱號。花語有「潔凈、純真」的意思。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbx">
+                            <img src="星座/牡羊.jpg">
+                        </div>
+                        <div class="dateils" data-aos="fade-up">
+                            <div class="dateils_container">
+                                <h3>牧羊座<br><span>Aries</span></h3>
+                                <button class="lightbox-button">Open Lightbox</button>
+
+                                <div class="lightbox" style="display: None;">
+                                    <div class="lightbox-container">
+                                        <div class="lightbox-header">
+                                            <p>C L O S E</p>
+                                        </div>
+                                        <div class="lightbox-card">
+                                            <img src="12_images/ARIES.jpg">
+                                            <div class="lightbox-card-font">
+                                                <div class="lightbox-card-font-1">
+                                                    <p class="lightbox-card-font-1-1">忍冬花</p>
+                                                    <p class="lightbox-card-font-1-2">「奉獻」</p>
+                                                </div>
+                                                <div class="lightbox-card-font-2"></div>
+                                                    <p class="lightbox-card-font-2-1">勇敢、自信又直接的白羊座，就如在春天早期盛開的忍冬花一樣，一朵朵顏色鮮艷亮眼。忍冬初開時呈白色，後來才會轉為深紛、橙和黃色等，所以亦有金銀花的稱號，常見的花語為「奉獻」的意思。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbx">
+                            <img src="星座/金牛.jpg">
+                        </div>
+                        <div class="dateils" data-aos="fade-up">
+                            <div class="dateils_container">
+                                <h3>金牛座<br><span>Taurus</span></h3>
+                                <button class="lightbox-button">Open Lightbox</button>
+
+                                <div class="lightbox" style="display: None;">
+                                    <div class="lightbox-container">
+                                        <div class="lightbox-header">
+                                            <p>C L O S E</p>
+                                        </div>
+                                        <div class="lightbox-card">
+                                            <img src="12_images/TAURUS.jpg">
+                                            <div class="lightbox-card-font">
+                                                <div class="lightbox-card-font-1">
+                                                    <p class="lightbox-card-font-1-1">海芋</p>
+                                                    <p class="lightbox-card-font-1-2">「愛與美」</p>
+                                                </div>
+                                                <div class="lightbox-card-font-2"></div>
+                                                    <p class="lightbox-card-font-2-1">相對較喜歡在感官上得到愉悅感的金牛，最適合在眾花種中芳香味較重的百合花，陣陣迷人的花香味遍佈於遠方，讓人難以抗拒，獨特的個性讓你輕易在人群中突出。常見的花語亦有為「純潔高雅」的意思。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbx">
+                            <img src="星座/雙子.jpg">
+                        </div>
+                        <div class="dateils" data-aos="fade-up">
+                            <div class="dateils_container">
+                                <h3>雙子座<br><span>Gemini</span></h3>
+                                <button class="lightbox-button">Open Lightbox</button>
+
+                                <div class="lightbox" style="display: None;">
+                                    <div class="lightbox-container">
+                                        <div class="lightbox-header">
+                                            <p>C L O S E</p>
+                                        </div>
+                                        <div class="lightbox-card">
+                                            <img src="12_images/GEMINI.jpg">
+                                            <div class="lightbox-card-font">
+                                                <div class="lightbox-card-font-1">
+                                                    <p class="lightbox-card-font-1-1">鈴蘭</p>
+                                                    <p class="lightbox-card-font-1-2">「神秘」</p>
+                                                </div>
+                                                <div class="lightbox-card-font-2"></div>
+                                                    <p class="lightbox-card-font-2-1">善於交際的雙子座就如薰衣草一樣，常見如外國的茂盛的花田般，紫色的花海看起來浪漫又夢幻，而沁人的香味亦有舒解壓力的功效，讓人陶醉於其中。而常見的花語亦有「等待愛情」的意思。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbx">
+                            <img src="星座/巨蟹.jpg">
+                        </div>
+                        <div class="dateils" data-aos="fade-up">
+                            <div class="dateils_container">
+                                <h3>巨蟹座<br><span>Cancer</span></h3>
+                                <button class="lightbox-button">Open Lightbox</button>
+
+                                <div class="lightbox" style="display: None;">
+                                    <div class="lightbox-container">
+                                        <div class="lightbox-header">
+                                            <p>C L O S E</p>
+                                        </div>
+                                        <div class="lightbox-card">
+                                            <img src="12_images/CANCER.jpg">
+                                            <div class="lightbox-card-font">
+                                                <div class="lightbox-card-font-1">
+                                                    <p class="lightbox-card-font-1-1">百合</p>
+                                                    <p class="lightbox-card-font-1-2">「幸福」</p>
+                                                </div>
+                                                <div class="lightbox-card-font-2"></div>
+                                                    <p class="lightbox-card-font-2-1">內心比較靈敏的巨蟹座和白色的花朵特別合襯，都喜歡寧靜的感覺、無憂無慮的感覺。而白色亦如一塊空白的畫板，容許對具有創意力的巨蟹座自由發揮，常見的花語亦有「天真純潔」的意思。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbx">
+                            <img src="星座/獅子.jpg">
+                        </div>
+                        <div class="dateils" data-aos="fade-up">
+                            <div class="dateils_container">
+                                <h3>獅子座<br><span>Leo</span></h3>
+                                <button class="lightbox-button">Open Lightbox</button>
+
+                                <div class="lightbox" style="display: None;">
+                                    <div class="lightbox-container">
+                                        <div class="lightbox-header">
+                                            <p>C L O S E</p>
+                                        </div>
+                                        <div class="lightbox-card">
+                                            <img src="12_images/LEO.jpg">
+                                            <div class="lightbox-card-font">
+                                                <div class="lightbox-card-font-1">
+                                                    <p class="lightbox-card-font-1-1">向日葵</p>
+                                                    <p class="lightbox-card-font-1-2">「不凡」</p>
+                                                </div>
+                                                <div class="lightbox-card-font-2"></div>
+                                                    <p class="lightbox-card-font-2-1">鮮黃色最能代表外向、溫暖大方的你，如同色彩光亮的向日葵太陽般，為大自然添上光輝，帶給身邊的人來希望和快樂。常見的花語亦有「勇敢忠誠」的意思。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbx">
+                            <img src="星座/處女.jpg">
+                        </div>
+                        <div class="dateils" data-aos="fade-up">
+                            <div class="dateils_container">
+                                <h3>處女座<br><span>Virgo</span></h3>
+                                <button class="lightbox-button">Open Lightbox</button>
+
+                                <div class="lightbox" style="display: None;">
+                                    <div class="lightbox-container">
+                                        <div class="lightbox-header">
+                                            <p>C L O S E</p>
+                                        </div>
+                                        <div class="lightbox-card">
+                                            <img src="12_images/VIRGO.jpg">
+                                            <div class="lightbox-card-font">
+                                                <div class="lightbox-card-font-1">
+                                                    <p class="lightbox-card-font-1-1">扶桑花</p>
+                                                    <p class="lightbox-card-font-1-2">「脫俗」</p>
+                                                </div>
+                                                <div class="lightbox-card-font-2"></div>
+                                                    <p class="lightbox-card-font-2-1">為人小心緊慎又注重細節的處女座，就如嬌小、精緻的菊花一樣，與其他菊花湊在一起時顯眼又強大，絕對不容忽視。常見的花語為「真情高潔」的意思。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbx">
+                            <img src="星座/天秤.jpg">
+                        </div>
+                        <div class="dateils" data-aos="fade-up">
+                            <div class="dateils_container">
+                                <h3>天秤座<br><span>Libra</span></h3>
+                                <button class="lightbox-button">Open Lightbox</button>
+
+                                <div class="lightbox" style="display: None;">
+                                    <div class="lightbox-container">
+                                        <div class="lightbox-header">
+                                            <p>C L O S E</p>
+                                        </div>
+                                        <div class="lightbox-card">
+                                            <img src="12_images/LIBRA.jpg">
+                                            <div class="lightbox-card-font">
+                                                <div class="lightbox-card-font-1">
+                                                    <p class="lightbox-card-font-1-1">牽牛花</p>
+                                                    <p class="lightbox-card-font-1-2">「初戀」</p>
+                                                </div>
+                                                <div class="lightbox-card-font-2"></div>
+                                                    <p class="lightbox-card-font-2-1">天秤座為人重視原則，對事情的對錯分明，總能拿捏得宜的平衡感。正如玫瑰花一樣，花朵上每片花瓣的長闊度相似，在室外內都能燦爛盛放，同時亦是愛情和浪漫的象徵。而常見的花語亦有「愛與美」的意思。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbx">
+                            <img src="星座/天蠍.jpg">
+                        </div>
+                        <div class="dateils" data-aos="fade-up">
+                            <div class="dateils_container">
+                                <h3>天蠍座<br><span>Scorpio</span></h3>
+                                <button class="lightbox-button">Open Lightbox</button>
+
+                                <div class="lightbox" style="display: None;">
+                                    <div class="lightbox-container">
+                                        <div class="lightbox-header">
+                                            <p>C L O S E</p>
+                                        </div>
+                                        <div class="lightbox-card">
+                                            <img src="12_images/SCORPIO.jpg">
+                                            <div class="lightbox-card-font">
+                                                <div class="lightbox-card-font-1">
+                                                    <p class="lightbox-card-font-1-1">桂花</p>
+                                                    <p class="lightbox-card-font-1-2">「高潔飄逸」</p>
+                                                </div>
+                                                <div class="lightbox-card-font-2"></div>
+                                                    <p class="lightbox-card-font-2-1">充滿神秘感和擁有較強獨立思考能力的天蠍座，與經典迷人的深紅色特別合襯，尤其顏色偏深的老鹳草。聰明能幹的你，不妨考慮在辦公室的桌上放一盆小老鹳草，為沉悶的工作環境帶來添一份魅力感，而常見的花語亦有「吉祥努力」的意思。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbx">
+                            <img src="星座/射手.jpg">
+                        </div>
+                        <div class="dateils" data-aos="fade-up">
+                            <div class="dateils_container">
+                                <h3>射手座<br><span>Sagittarius</span></h3>
+                                <button class="lightbox-button">Open Lightbox</button>
+
+                                <div class="lightbox" style="display: None;">
+                                    <div class="lightbox-container">
+                                        <div class="lightbox-header">
+                                            <p>C L O S E</p>
+                                        </div>
+                                        <div class="lightbox-card">
+                                            <img src="12_images/SAGITTARIUS.jpg">
+                                            <div class="lightbox-card-font">
+                                                <div class="lightbox-card-font-1">
+                                                    <p class="lightbox-card-font-1-1">天堂鳥</p>
+                                                    <p class="lightbox-card-font-1-2">「幸福飛來」</p>
+                                                </div>
+                                                <div class="lightbox-card-font-2"></div>
+                                                    <p class="lightbox-card-font-2-1">可愛迷人的康乃馨如受歡迎的射手座一樣，花瓣既柔軟又簡單，是很多人會選擇在家居放置的花款之一，輕輕為室內添上一層柔和溫暖感。而康乃馨常用於婚禮或母親節時的花球，充滿着一字一句的祝福。花語有「真誠真情」的意思。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="container3_font_A">
-                    <div id="container3_font1" class="container3_font_size"></div>
-                    <div id="container3_font2" class="container3_font_size"></div>
-                    <div id="container3_font3" class="container3_font_size"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination">
                 </div>
-                <div id="container3_image_B">
-                    <div id="container3_image4" class="container3_circle_size"></div>
-                    <div id="container3_image5" class="container3_circle_size"></div>
-                    <div id="container3_image6" class="container3_circle_size"></div>
-                </div>
-                <div id="container3_font_B">
-                    <div id="container3_font4" class="container3_font_size"></div>
-                    <div id="container3_font5" class="container3_font_size"></div>
-                    <div id="container3_font6" class="container3_font_size"></div>
-                </div>
-                <div id="container3_title"></div>
             </div>
         </div>
         <div id="section4">
-            <div id="container4">
-                <div id="container4_title"></div>
-                <div id="container4_font1"></div>
-                <div id="container4_font2"></div>
-                <div id="container4_imageA">
-                    <div class="slider1">
-                        <img src=".\和服畫廊\k10409.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10410.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10412.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10413.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10414.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10415.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10416.jpg" alt="" srcset="">
-                    </div>       
+            <div id="section4_content">
+                <div class="menu-box block">
+                    <!-- MENU BOX (LEFT-CONTAINER) -->
+                    <h2 class="titular">MENU BOX</h2>
+                    <ul class="menu-box-menu">
+                        <li>
+                            <a class="menu-box-tab" href="#6"><span
+                                    class="icon fontawesome-envelope scnd-font-color"></span>Messages<div
+                                    class="menu-box-number">24</div></a>
+                        </li>
+                        <li>
+                            <a class="menu-box-tab" href="#8"><span
+                                    class="icon entypo-paper-plane scnd-font-color"></span>Invites<div
+                                    class="menu-box-number">3</div></a>
+                        </li>
+                        <li>
+                            <a class="menu-box-tab" href="#10"><span
+                                    class="icon entypo-calendar scnd-font-color"></span>Events<div class="menu-box-number">5
+                                </div></a>
+                        </li>
+                        <li>
+                            <a class="menu-box-tab" href="#12"><span class="icon entypo-cog scnd-font-color"></span>Account
+                                Settings</a>
+                        </li>
+                        <li>
+                            <a class="menu-box-tab" href="#13">
+                                <sapn class="icon entypo-chart-line scnd-font-color"></sapn>Statistics
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="container4_imageB">
-                    <div class="slider2">
-                        
-                        <img src=".\和服畫廊\k10410.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10412.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10413.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10414.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10415.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10416.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10409.jpg" alt="" srcset="">
-                       
+                <div class="tab-content-group">
+                    <div id="content_1" class="tab-content active">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">AAA</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                          </ul>
                     </div>
-                    <div class="slider3">
-                        
-                        <img src=".\和服畫廊\k10412.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10413.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10414.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10415.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10416.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10409.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10410.jpg" alt="" srcset="">
-                    
+                    <div id="content_2" class="tab-content">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">BBB</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                          </ul> 
                     </div>
-                    <div class="slider4" >
-                        
-                        <img src=".\和服畫廊\k10413.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10414.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10415.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10416.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10409.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10410.jpg" alt="" srcset="">
-                        <img src=".\和服畫廊\k10412.jpg" alt="" srcset="">
-                        
+                    <div id="content_3" class="tab-content">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">CCC</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                          </ul>
                     </div>
-                </div>
-                <div id="container4_button">
-                    <div id="buttonn" style="width: 35px; height: 35px; background-color: aqua; color: rgb(136, 120, 57); font-size: 20px; margin-right: 8px;">next</div>
-                    <div id="buttonp" style="width: 35px; height: 35px; background-color: blueviolet; color: rgb(168, 152, 87); font-size: 20px;">prev</div>
-                </div>
-                <input id="container4_more" type="button" value="MORE">
-            </div>
-        </div>
-        <div id="section5">
-            <div id="container5">
-                <div id="container5_title"></div>
-                <div id="container5_bg1"></div>
-                <div id="container5_bg2"></div>
-                <div id="container5_content">
-                    <div id="container5_content1">
-                        <div id="container5_content1_title"></div>
-                        <div id="container5_content1_circle"></div>
-                        <div id="container5_content1_font"></div>
+                    <div id="content_3" class="tab-content">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">DDD</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                          </ul>
                     </div>
-                    <div id="container5_content2">
-                        <div id="container5_content2_title"></div>
-                        <div id="container5_content2_circle"></div>
-                        <div id="container5_content2_font"></div>
-                    </div>
-                    <div id="container5_content3">
-                        <div id="container5_content3_title"></div>
-                        <div id="container5_content3_circle"></div>
-                        <div id="container5_content3_font"></div>
-                    </div>
-                    <div id="container5_content4">
-                        <div id="container5_content4_title"></div>
-                        <div id="container5_content4_circle"></div>
-                        <div id="container5_content4_font"></div>
+                    <div id="content_3" class="tab-content">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">EEE</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                          </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="section6">
-            <div id="container6"></div>
+            <!-- end calendar-month block -->
+            <!-- end right-container -->
+            <!-- end main-container -->
+            <!-- <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul> -->
+            <!-- <div id="section4_image" data-aos="fade-up-right" class="img_set"></div>
+            <div id="section4_font" data-aos="fade-up-left"></div> -->
         </div>
     </div>
-<!-- ------------------------------------ -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="slick_click.js"></script>
-<script>
-    jQuery(document).ready(function ($) {
-        $('.slider1').slick({
-            dots: false,
-            infinite: true,
-            speed: 500,
-            draggable: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            asNavFor:[$('.slider2'),$('.slider3'),$('.slider4')],
-            autoplay: true,
-            autoplaySpeed: 2000,
-            arrows: false,
-            // nextArrow:'#buttonn',
-            // prevArrow:'#buttonp',
-            responsive: [{
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            ],
-        });
-        $('#buttonn').click(function(){
-            // alert('hi');
-            $('.slider1').slick('slickNext');
-            $('.slider2').slick('slickNext');
-            $('.slider3').slick('slickNext');
-            $('.slider4').slick('slickNext');
-        });
-        $('#buttonp').click(function(){
-            // alert('hi');
-            $('.slider1').slick('slickPrev');
-            $('.slider2').slick('slickPrev');
-            $('.slider3').slick('slickPrev');
-            $('.slider4').slick('slickPrev');
-        });
+    <div id="footer">
+        <div class="main-container">
 
-        // $('.slider1').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        // console.log(123);
-        // $('.slider1').slick('slickNext');
-        // $('.slider2').slick('slickNext');
-        // $('.slider3').slick('slickNext');
-        // });
+            <!-- HEADER -->
+            <!-- <header class="block">
+                <ul class="header-menu horizontal-list">
+                    <li>
+                        <a class="header-menu-tab" href="#1"><span class="icon entypo-cog scnd-font-color"></span>Settings</a>
+                    </li>
+                    <li>
+                        <a class="header-menu-tab" href="#2"><span class="icon fontawesome-user scnd-font-color"></span>Account</a>
+                    </li>
+                    <li>
+                        <a class="header-menu-tab" href="#3"><span class="icon fontawesome-envelope scnd-font-color"></span>Messages</a>
+                        <a class="header-menu-number" href="#4">5</a>
+                    </li>
+                    <li>
+                        <a class="header-menu-tab" href="#5"><span class="icon fontawesome-star-empty scnd-font-color"></span>Favorites</a>
+                    </li>
+                </ul>
+                <div class="profile-menu">
+                    <p>Me <a href="#26"><span class="entypo-down-open scnd-font-color"></span></a></p>
+                    <div class="profile-picture small-profile-picture">
+                        <img width="40px" alt="Anne Hathaway picture" src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Anne_Hathaway_Face.jpg">
+                    </div>
+                </div>
+            </header>
+ -->
+            <!-- LEFT-CONTAINER -->
+            <div class="left-container container">
+                <!-- <div class="menu-box block">
+                     MENU BOX (LEFT-CONTAINER)
+                    <h2 class="titular">MENU BOX</h2>
+                    <ul class="menu-box-menu">
+                        <li>
+                            <a class="menu-box-tab" href="#6"><span
+                                    class="icon fontawesome-envelope scnd-font-color"></span>Messages<div
+                                    class="menu-box-number">24</div></a>
+                        </li>
+                        <li>
+                            <a class="menu-box-tab" href="#8"><span
+                                    class="icon entypo-paper-plane scnd-font-color"></span>Invites<div
+                                    class="menu-box-number">3</div></a>
+                        </li>
+                        <li>
+                            <a class="menu-box-tab" href="#10"><span
+                                    class="icon entypo-calendar scnd-font-color"></span>Events<div
+                                    class="menu-box-number">5</div></a>
+                        </li>
+                        <li>
+                            <a class="menu-box-tab" href="#12"><span
+                                    class="icon entypo-cog scnd-font-color"></span>Account Settings</a>
+                        </li>
+                        <li>
+                            <a class="menu-box-tab" href="#13">
+                                <sapn class="icon entypo-chart-line scnd-font-color"></sapn>Statistics
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
+                <div class="donut-chart-block block">
+                    <!-- DONUT CHART BLOCK (LEFT-CONTAINER) -->
+                    <h2 class="titular">OS AUDIENCE STATS</h2>
+                    <div class="donut-chart">
+                        <!-- DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
+                        <div id="porcion1" class="recorte">
+                            <div class="quesito ios" data-rel="21"></div>
+                        </div>
+                        <div id="porcion2" class="recorte">
+                            <div class="quesito mac" data-rel="39"></div>
+                        </div>
+                        <div id="porcion3" class="recorte">
+                            <div class="quesito win" data-rel="31"></div>
+                        </div>
+                        <div id="porcionFin" class="recorte">
+                            <div class="quesito linux" data-rel="9"></div>
+                        </div>
+                        <!-- END DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
+                        <p class="center-date">JUNE<br><span class="scnd-font-color">2013</span></p>
+                    </div>
+                    <ul class="os-percentages horizontal-list">
+                        <li>
+                            <p class="ios os scnd-font-color">iOS</p>
+                            <p class="os-percentage">21<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p class="mac os scnd-font-color">Mac</p>
+                            <p class="os-percentage">48<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p class="linux os scnd-font-color">Linux</p>
+                            <p class="os-percentage">9<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p class="win os scnd-font-color">Win</p>
+                            <p class="os-percentage">32<sup>%</sup></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="line-chart-block block clear">
+                    <!-- LINE CHART BLOCK (LEFT-CONTAINER) -->
+                    <div class="line-chart">
+                        <!-- LINE-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
+                        <div class='grafico'>
+                            <ul class='eje-y'>
+                                <li data-ejeY='30'></li>
+                                <li data-ejeY='20'></li>
+                                <li data-ejeY='10'></li>
+                                <li data-ejeY='0'></li>
+                            </ul>
+                            <ul class='eje-x'>
+                                <li>Apr</li>
+                                <li>May</li>
+                                <li>Jun</li>
+                            </ul>
+                            <span data-valor='25'>
+                                <span data-valor='8'>
+                                    <span data-valor='13'>
+                                        <span data-valor='5'>
+                                            <span data-valor='23'>
+                                                <span data-valor='12'>
+                                                    <span data-valor='15'>
+                                                    </span></span></span></span></span></span></span>
+                        </div>
+                        <!-- END LINE-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
+                    </div>
+                    <ul class="time-lenght horizontal-list">
+                        <li><a class="time-lenght-btn" href="#14">Week</a></li>
+                        <li><a class="time-lenght-btn" href="#15">Month</a></li>
+                        <li><a class="time-lenght-btn" href="#16">Year</a></li>
+                    </ul>
+                    <ul class="month-data clear">
+                        <li>
+                            <p>APR<span class="scnd-font-color"> 2013</span></p>
+                            <p><span class="entypo-plus increment"> </span>21<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p>MAY<span class="scnd-font-color"> 2013</span></p>
+                            <p><span class="entypo-plus increment"> </span>48<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p>JUN<span class="scnd-font-color"> 2013</span></p>
+                            <p><span class="entypo-plus increment"> </span>35<sup>%</sup></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="media block">
+                    <!-- MEDIA (LEFT-CONTAINER) -->
+                    <div id="media-display">
+                        <a class="media-btn play" href="#23"><span class="fontawesome-play"></span></a>
+                    </div>
+                    <div class="media-control-bar">
+                        <a class="media-btn play" href="#23"><span class="fontawesome-play scnd-font-color"></span></a>
+                        <p class="time-passed">4:15 <span class="time-duration scnd-font-color">/ 9:23</span></p>
+                        <a class="media-btn volume" href="#24"><span
+                                class="fontawesome-volume-up scnd-font-color"></span></a>
+                        <a class="media-btn resize" href="#25"><span
+                                class="fontawesome-resize-full scnd-font-color"></span></a>
+                    </div>
+                </div>
+                <ul class="social horizontal-list block">
+                    <!-- SOCIAL (LEFT-CONTAINER) -->
+                    <li class="facebook">
+                        <p class="icon"><span class="zocial-facebook"></span></p>
+                        <p class="number">248k</p>
+                    </li>
+                    <li class="twitter">
+                        <p class="icon"><span class="zocial-twitter"></span></p>
+                        <p class="number">30k</p>
+                    </li>
+                    <li class="googleplus">
+                        <p class="icon"><span class="zocial-googleplus"></span></p>
+                        <p class="number">124k</p>
+                    </li>
+                    <li class="mailbox">
+                        <p class="icon"><span class="fontawesome-envelope"></span></p>
+                        <p class="number">89k</p>
+                    </li>
+                </ul>
+            </div>
 
-        // $('#buttonp').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        // console.log(123);
-        // $('.slider1').slick('slickPrev');
-        // $('.slider2').slick('slickPrev');
-        // $('.slider3').slick('slickPrev');
-        // });
-    });
-    </script>
-    <script>
-        jQuery(document).ready(function ($) {
-            $('.slider2').slick({
-                dots: false,
-                infinite: true,
-                draggable: false,
-                speed: 500,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: false,
-                autoplaySpeed: 2000,
-                arrows: false,
-                responsive: [{
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 400,
-                    settings: {
-                        arrows: false,
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }]
-            });
-        });
-    </script>
-    <script>
-        jQuery(document).ready(function ($) {
-            $('.slider3').slick({
-                dots: false,
-                infinite: true,
-                draggable: false,
-                speed: 500,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: false,
-                autoplaySpeed: 2000,
-                arrows: false,
-                responsive: [{
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 400,
-                    settings: {
-                        arrows: false,
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }]
-            });
-        });
-    </script>
-     <script>
-        jQuery(document).ready(function ($) {
-            $('.slider4').slick({
-                dots: false,
-                infinite: true,
-                draggable: false,
-                speed: 500,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: false,
-                autoplaySpeed: 2000,
-                arrows: false,
-                responsive: [{
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 400,
-                    settings: {
-                        arrows: false,
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }]
-            });
-        });
-    </script>
+            <!-- MIDDLE-CONTAINER -->
+            <div class="middle-container container">
+                <div class="profile block">
+                    <!-- PROFILE (MIDDLE-CONTAINER) -->
+                    <a class="add-button" href="#28"><span class="icon entypo-plus scnd-font-color"></span></a>
+                    <div class="profile-picture big-profile-picture clear">
+                        <img width="150px" alt="Anne Hathaway picture"
+                            src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Anne_Hathaway_Face.jpg">
+                    </div>
+                    <h1 class="user-name">Anne Hathaway</h1>
+                    <div class="profile-description">
+                        <p class="scnd-font-color">Lorem ipsum dolor sit amet consectetuer adipiscing</p>
+                    </div>
+                    <ul class="profile-options horizontal-list">
+                        <li><a class="comments" href="#40">
+                                <p><span class="icon fontawesome-comment-alt scnd-font-color"></span>23</li>
+                        </p></a>
+                        <li><a class="views" href="#41">
+                                <p><span class="icon fontawesome-eye-open scnd-font-color"></span>841</li>
+                        </p></a>
+                        <li><a class="likes" href="#42">
+                                <p><span class="icon fontawesome-heart-empty scnd-font-color"></span>49</li>
+                        </p></a>
+                    </ul>
+                </div>
+                <div class="weather block clear">
+                    <!-- WEATHER (MIDDLE-CONTAINER) -->
+                    <h2 class="titular"><span class="icon entypo-location"></span><strong>CLUJ-NAPOCA</strong>/RO</h2>
+                    <div class="current-day">
+                        <p class="current-day-date">FRI 29/06</p>
+                        <p class="current-day-temperature">24º<span class="icon-cloudy"></span></p>
+                    </div>
+                    <ul class="next-days">
+                        <li>
+                            <a href="#43">
+                                <p class="next-days-date"><span class="day">SAT</span> <span
+                                        class="scnd-font-color">29/06</span></p>
+                                <p class="next-days-temperature">25º<span
+                                        class="icon icon-cloudy scnd-font-color"></span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#44">
+                                <p class="next-days-date"><span class="day">SUN</span> <span
+                                        class="scnd-font-color">30/06</span></p>
+                                <p class="next-days-temperature">22º<span
+                                        class="icon icon-cloudy2 scnd-font-color"></span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#45">
+                                <p class="next-days-date"><span class="day">MON</span> <span
+                                        class="scnd-font-color">01/07</span></p>
+                                <p class="next-days-temperature">24º<span
+                                        class="icon icon-cloudy2 scnd-font-color"></span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#46">
+                                <p class="next-days-date"><span class="day">TUE</span> <span
+                                        class="scnd-font-color">02/07</span></p>
+                                <p class="next-days-temperature">26º<span
+                                        class="icon icon-cloudy scnd-font-color"></span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="next-days-date"><span class="day">WED</span> <span
+                                        class="scnd-font-color">03/07</span></p>
+                                <p class="next-days-temperature">27º<span class="icon icon-sun scnd-font-color"></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="next-days-date"><span class="day">THU</span> <span
+                                        class="scnd-font-color">04/07</span></p>
+                                <p class="next-days-temperature">29º<span class="icon icon-sun scnd-font-color"></span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tweets block">
+                    <!-- TWEETS (MIDDLE-CONTAINER) -->
+                    <h2 class="titular"><span class="icon zocial-twitter"></span>LATEST TWEETS</h2>
+                    <div class="tweet first">
+                        <p>Ice-cream trucks only play music when out of ice-cream. Well played dad. On <a
+                                class="tweet-link" href="#17">@Quora</a></p>
+                        <p><a class="time-ago scnd-font-color" href="#18">3 minutes ago</a></p>
+                    </div>
+                    <div class="tweet">
+                        <p>We are in the process of pushing out all of the new CC apps! We will tweet again once they
+                            are live <a class="tweet-link" href="#19">#CreativeCloud</a></p>
+                        <p><a class="scnd-font-color" href="#20">6 hours ago</a></p>
+                    </div>
+                </div>
+                <ul class="social block">
+                    <!-- SOCIAL (MIDDLE-CONTAINER) -->
+                    <li><a href="#50">
+                            <div class="facebook icon"><span class="zocial-facebook"></span></div>
+                            <h2 class="facebook titular">SHARE TO FACEBOOK</h2>
+                    </li></a>
+                    <li><a href="#51">
+                            <div class="twitter icon"><span class="zocial-twitter"></span></div>
+                            <h2 class="twitter titular">SHARE TO TWITTER</h2>
+                    </li></a>
+                    <li><a href="#52">
+                            <div class="googleplus icon"><span class="zocial-googleplus"></span></div>
+                            <h2 class="googleplus titular">SHARE TO GOOGLE+</h2>
+                    </li></a>
+                </ul>
+            </div>
+
+            <!-- RIGHT-CONTAINER -->
+            <div class="right-container container">
+                <div class="join-newsletter block">
+                    <!-- JOIN NEWSLETTER (RIGHT-CONTAINER) -->
+                    <h2 class="titular">JOIN THE NEWSLETTER</h2>
+                    <div class="input-container">
+                        <input type="text" placeholder="yourname@gmail.com" class="email text-input">
+                        <div class="input-icon envelope-icon-newsletter"><span
+                                class="fontawesome-envelope scnd-font-color"></span></div>
+                    </div>
+                    <a class="subscribe button" href="#21">SUBSCRIBE</a>
+                </div>
+                <div class="account block">
+                    <!-- ACCOUNT (RIGHT-CONTAINER) -->
+                    <h2 class="titular">SIGN IN TO YOUR ACCOUNT</h2>
+                    <div class="input-container">
+                        <input type="text" placeholder="yourname@gmail.com" class="email text-input">
+                        <div class="input-icon envelope-icon-acount"><span
+                                class="fontawesome-envelope scnd-font-color"></span></div>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Password" class="password text-input">
+                        <div class="input-icon password-icon"><span class="fontawesome-lock scnd-font-color"></span>
+                        </div>
+                    </div>
+                    <a class="sign-in button" href="#22">SIGN IN</a>
+                    <p class="scnd-font-color">Forgot Password?</p>
+                    <a class="fb-sign-in" href="58">
+                        <p><span class="fb-border"><span class="icon zocial-facebook"></span></span>Sign in with
+                            Facebook</p>
+                    </a>
+                </div>
+                <div class="loading block">
+                    <!-- LOADING (RIGHT-CONTAINER) -->
+                    <div class="progress-bar downloading"></div>
+                    <p><span class="icon fontawesome-cloud-download scnd-font-color"></span>Downloading...</p>
+                    <p class="percentage">81<sup>%</sup></p>
+                    <div class="progress-bar uploading"></div>
+                    <p><span class="icon fontawesome-cloud-upload scnd-font-color"></span>Uploading...</p>
+                    <p class="percentage">43<sup>%</sup></p>
+                </div>
+                <div class="calendar-day block">
+                    <!-- CALENDAR DAY (RIGHT-CONTAINER) -->
+                    <div class="arrow-btn-container">
+                        <a class="arrow-btn left" href="#200"><span class="icon fontawesome-angle-left"></span></a>
+                        <h2 class="titular">WEDNESDAY</h2>
+                        <a class="arrow-btn right" href="#201"><span class="icon fontawesome-angle-right"></span></a>
+                    </div>
+                    <p class="the-day">26</p>
+                    <a class="add-event button" href="#27">ADD EVENT</a>
+                </div>
+                <div class="calendar-month block">
+                    <!-- CALENDAR MONTH (RIGHT-CONTAINER) -->
+                    <div class="arrow-btn-container">
+                        <a class="arrow-btn left" href="#202"><span class="icon fontawesome-angle-left"></span></a>
+                        <h2 class="titular">APRIL 2013</h2>
+                        <a class="arrow-btn right" href="#203"><span class="icon fontawesome-angle-right"></span></a>
+                    </div>
+                    <table class="calendar">
+                        <thead class="days-week">
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>R</th>
+                                <th>F</th>
+                                <th>S</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a class="scnd-font-color" href="#100">1</a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="scnd-font-color" href="#101">2</a></td>
+                                <td><a class="scnd-font-color" href="#102">3</a></td>
+                                <td><a class="scnd-font-color" href="#103">4</a></td>
+                                <td><a class="scnd-font-color" href="#104">5</a></td>
+                                <td><a class="scnd-font-color" href="#105">6</a></td>
+                                <td><a class="scnd-font-color" href="#106">7</a></td>
+                                <td><a class="scnd-font-color" href="#107">8</a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="scnd-font-color" href="#108">9</a></td>
+                                <td><a class="scnd-font-color" href="#109">10</a></td>
+                                <td><a class="scnd-font-color" href="#110">11</a></td>
+                                <td><a class="scnd-font-color" href="#111">12</a></td>
+                                <td><a class="scnd-font-color" href="#112">13</a></td>
+                                <td><a class="scnd-font-color" href="#113">14</a></td>
+                                <td><a class="scnd-font-color" href="#114">15</a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="scnd-font-color" href="#115">16</a></td>
+                                <td><a class="scnd-font-color" href="#116">17</a></td>
+                                <td><a class="scnd-font-color" href="#117">18</a></td>
+                                <td><a class="scnd-font-color" href="#118">19</a></td>
+                                <td><a class="scnd-font-color" href="#119">20</a></td>
+                                <td><a class="scnd-font-color" href="#120">21</a></td>
+                                <td><a class="scnd-font-color" href="#121">22</a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="scnd-font-color" href="#122">23</a></td>
+                                <td><a class="scnd-font-color" href="#123">24</a></td>
+                                <td><a class="scnd-font-color" href="#124">25</a></td>
+                                <td><a class="today" href="#125">26</a></td>
+                                <td><a href="#126">27</a></td>
+                                <td><a href="#127">28</a></td>
+                                <td><a href="#128">29</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#129">30</a></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<!-- Swiper JS -->
+<script src="swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<!-- Initialize Swiper -->
+<!-- <script>
+    var swiper = new Swiper('#swiper2', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination1',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next1',
+        prevEl: '.swiper-button-prev1',
+      },
+    });
+  </script> -->
+<script>
+    var swiper = new Swiper('#swiper1', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        on: {
+            slideChange: function () {
+                // var lightbox_container = $(".lightbox-container");
+                // console.log(lightbox_container);
+                $(".lightbox").css("display","none");
+
+                //此為陣列無法用下面方法更改 更改屬性要用foreach一個個抓取更改 用JQ則不用
+                //lightbox_container.style.display = "none";
+                //lightbox_container.setAttribute("style","display = none");
+                // document.querySelectorAll('.lightbox').style.display = "none";
+            }
+        },
+        //loop: true //循環
+    });
+</script>
+<!-- ID連結JS -->
+<!-- 滑鼠鼠標跟隨事件 -->
+<!-- 會失靈，無法超出100vh -->
+
+<script type="text/javascript">
+    var cursor = document.querySelector("#cursor");
+    document.addEventListener('mousemove', function (e) {
+        // page可以跨出100vh
+        var x = e.pageX;
+        var y = e.pageY;
+        cursor.style.left = x + "px";
+        cursor.style.top = y + "px";
+    });
+</script>
+<!-- -------------------- -->
+<!-- <script>
+    var circle1 = document.querySelector('.path1'), len1 = 2 * Math.PI * circle1.getAttribute('r');
+    circle1.style.strokeDasharray = circle1.style.strokeDashoffset = len1;
+    var circle2 = document.querySelector('.path2'), len2 = 2 * Math.PI * circle2.getAttribute('r');
+    circle2.style.strokeDasharray = circle2.style.strokeDashoffset = len2;
+    var circle3 = document.querySelector('.path3'), len3 = 2 * Math.PI * circle3.getAttribute('r');
+    circle3.style.strokeDasharray = circle3.style.strokeDashoffset = len3;
+    var circle4 = document.querySelector('.path4'), len4 = 2 * Math.PI * circle4.getAttribute('r');
+    circle4.style.strokeDasharray = circle4.style.strokeDashoffset = len4;
+    var circle5 = document.querySelector('.path5'), len5 = 2 * Math.PI * circle5.getAttribute('r');
+    circle5.style.strokeDasharray = circle5.style.strokeDashoffset = len5;
+
+    var scrollTip1 = document.querySelector('.path1');
+    var scrollTip2 = document.querySelector('.path2');
+    var scrollTip3 = document.querySelector('.path3');
+    var scrollTip4 = document.querySelector('.path4');
+    var scrollTip5 = document.querySelector('.path5');
+
+    //宣告
+    //頁面載入時，給它執行一次
+    //監聽動畫是否結束
+    //動畫結束，移除動畫的樣式類
+    //延時20秒，再將動畫加入
+
+
+    var img = document.querySelector('.round_image_content_right_section');
+    var scrollTip1 = document.querySelector('.path1');
+    scrollTip1.classList.add('runcircle');
+    img.innerHTML = '<img width="100%" height="100%" src="image_H.jpg">';
+    scrollTip1.addEventListener('animationend', function () {
+        scrollTip1.classList.remove('runcircle');
+        img.innerHTML = '<img width="100%" height="100%" src="image_D.jpg">';
+        setTimeout(function () {
+            scrollTip1.classList.add('runcircle');
+        }, 20000)
+        var scrollTip2 = document.querySelector('.path2');
+        scrollTip2.classList.add('runcircle');
+        scrollTip2.addEventListener('animationend', function () {
+            scrollTip2.classList.remove('runcircle');
+            img.innerHTML = '<img width="100%" height="100%" src="image_E.jpg">';
+            setTimeout(function () {
+                scrollTip2.classList.add('runcircle');
+            }, 20000)
+            var scrollTip3 = document.querySelector('.path3');
+            scrollTip3.classList.add('runcircle');
+            scrollTip3.addEventListener('animationend', function () {
+                scrollTip3.classList.remove('runcircle');
+                img.innerHTML = '<img width="100%" height="100%" src="image_F.jpg">';
+                setTimeout(function () {
+                    scrollTip3.classList.add('runcircle');
+                }, 20000)
+                var scrollTip4 = document.querySelector('.path4');
+                scrollTip4.classList.add('runcircle');
+                scrollTip4.addEventListener('animationend', function () {
+                    scrollTip4.classList.remove('runcircle');
+                    img.innerHTML = '<img width="100%" height="100%" src="image_G.jpg">';
+                    setTimeout(function () {
+                        scrollTip4.classList.add('runcircle');
+                    }, 20000)
+                    var scrollTip5 = document.querySelector('.path5');
+                    scrollTip5.classList.add('runcircle');
+                    scrollTip5.addEventListener('animationend', function () {
+                        scrollTip5.classList.remove('runcircle');
+                        img.innerHTML = '<img width="100%" height="100%" src="image_H.jpg">';
+                        setTimeout(function () {
+                            scrollTip5.classList.add('runcircle');
+                        }, 20000)
+                    })
+                })
+            })
+        })
+    })
+</script> -->
+<script>
+    jQuery(document).ready(function () {
+        $(window).scroll(function (e) {
+            parallaxScroll();
+        });
+
+        function parallaxScroll() {
+            var scrolled = $(window).scrollTop();
+            $('#img_A').css('top', (0 - (scrolled * .025)) + 'px');
+            $('#section1_content').css('margin-top', (0 + (scrolled * .03)) + 'px');
+            $('#section2_content').css('margin-top', (0 + (scrolled * .06)) + 'px');
+            $('#section3_content').css('margin-top', (0 + (scrolled * .09)) + 'px');
+
+            //   $('#parallax-bg-2').css('top',(0-(scrolled*.4))+'px');
+            //   $('#parallax-bg-3').css('top',(0-(scrolled*.75))+'px');
+        }
+    }); 
+</script>
+<script>
+    //開關用
+
+    // open
+    $(".lightbox-button").click(function () {
+        var lightbox_button = $(".lightbox-button").index(this);
+
+        //測試抓取用
+        // console.log(lightbox_button);
+        console.log(123);
+        //成功更改屬性，但為何可以這樣寫，要這樣寫
+        document.getElementsByClassName('lightbox')[lightbox_button].style.display = "block";
+    });
+
+    //改單一選項
+    //document.querySelector('.titleClass').style.屬性名 = 值;
+    //為何不行?
+    // document.querySelectorAll(`.lightbox:nth-child(${lightbox_button+1})`).setAttribute("display", "block");
+    //為何會全部顯示
+    // $(".lightbox").show(200);
+    //語法哪裡錯誤
+    // document.querySelectorAll(`.lightbox`).style.display = "block";
+
+    //哪邊有錯誤
+    // $(".lightbox-button").click(function () {
+    //var lightbox_button = $(".lightbox-button").index(this);
+    //console.log(lightbox_button);
+    //$(`.lightbox:nth-child(${lightbox_button})`).show(200);
+    // });
+
+    // close
+    $(".lightbox-container").click(function () {
+        var lightbox_container = $(".lightbox-container").index(this);
+        document.getElementsByClassName('lightbox')[lightbox_container].style.display = "none";
+
+        //這樣寫的功用是?
+        // $(".lightbox").hide(200);
+
+    });
+
+</script>
+<script>//獲取CSS屬性指令
+    //這2種有何差別 都能抓取屬性嗎
+    //document.getElementById(“css88″).style.width
+    //document.querySelectorAll('.swiper-slide').css.z-index
+
+    //讀取值(一個引數)
+    //alert($("div").css("width"));
+
+
+    $(".lightbox-button").click(function () {
+        var lightbox_button = $(".lightbox-button").index(this);
+        //此寫法有甚麼錯
+        //何時要加 # . `  3種符號
+        // var zindex = document.querySelectorAll('.swiper-slide').css.z-index;
+
+        //成功抓取，但為何可以這樣寫
+        var zindex = $(`.swiper-slide:nth-child(${lightbox_button + 1})`).css("z-index");
+        //console.log(zindex); //測試用
+
+
+        //要控制z-index=1時 點按鈕才會顯示lightbox
+        if (zindex != 1) { //如果z-index等於1時按鈕按下去會顯示 不等於不會顯示
+            document.getElementsByClassName('lightbox')[lightbox_button].style.display = "none";
+        }
+    });
+
+        //沒成功
+        //要控制z-index!=1時 lightbox要隱藏掉
+        // var zindex = $(`.swiper-slide:nth-child(${lightbox_button+1})`).css("z-index");
+        // if(zindex != 1){
+        //      document.querySelectorAll('lightbox').style.display = "none";
+        // }
+
+
+        // var mySwiper = new Swiper('.swiper-container', {
+        // });
+
+        // });
+
+</script>
+
+<script>
+
+    //按鍵事件
+    $(".menu-box-tab").click(function() {
+        //按下第n個按鈕 , 第n個分頁就要加上active ,按鈕本身也要加上active
+        
+        var menu_box_tab = $(".menu-box-tab").index(this);
+        // console.log(this);
+
+        //remove all active
+        $('.menu-box-tab').removeClass('active');
+        $('.tab-content').removeClass('active');
+
+        //add btn active
+        $(this).addClass('active');
+
+        //add content active
+        $(`.tab-content:nth-child(${menu_box_tab+1})`).addClass('active');
+    });
+    
+</script>
 </html>
+
+
+
+
+<!-- 
+    此為網路講解
+
+    document.getElementsByClassName('btn-pageMenu') delivers a nodeList.
+    You should use: document.getElementsByClassName('btn-pageMenu')[0].style.display
+    (if it's the first element from that list you want to change.
+
+    If you want to change style.display for all nodes loop through the list:
+
+    var elems = document.getElementsByClassName('btn-pageMenu');
+    for (var i=0;i<elems.length;i+=1){
+    elems[i].style.display = 'block';
+    }
+
+    to be complete: if you use jquery it is as simple as:
+
+​   $('.btn-pageMenu').css('display'​​​​​​​​​​​​​​​​​​​​​​​​​​​,'block');​​​​​​
+
+
+ -->
