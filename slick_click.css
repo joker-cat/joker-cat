@@ -1,16 +1,5 @@
-*{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-}
-/* #all{
-     display: flex;
-     flex-wrap: wrap;
-   justify-content: center;
-}*/
 .slider1{
-    width: 404px;
+    width: 405px;
 } 
 
 .slider2,
@@ -19,11 +8,11 @@ body{
     width: 230px;
 } 
 .slider1 img{
-    height: 583px;
+    height: 580px;
 }
 
 .slider2 img,.slider3 img,.slider4 img {
-    height: 330px;
+    height: 335px;
 }
 
 .slick-slide {
