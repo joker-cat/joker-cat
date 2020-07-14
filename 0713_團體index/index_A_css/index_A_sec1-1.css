@@ -1,0 +1,77 @@
+#Middle_section1-1 {
+    width: 100%;
+    background-color: #505A49;
+}
+
+#Middle_section1-1_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 70px 8.33333333vw;
+}
+
+#Middle_section1-1_L {
+    width: 55%;
+    height: 100%;
+}
+
+#M_sec1-1_LT {
+    width: 100%;
+}
+
+#M_sec1-1_LB {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -15px;
+}
+
+#M_sec1-1_LB_L {
+    width: 55%;
+    align-self: flex-end;
+}
+
+#M_sec1-1_LB_R {
+    width: 35%;
+}
+
+#Middle_section1-1_R {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 45%;
+    padding-left: 70px;
+}
+
+#Middle_sec1-1_R_title {
+    position: relative;
+    font-size: 28px;
+    font-family: '微軟正黑體';
+    color: #CC804D;
+    margin-bottom: 30px;
+}
+
+#Middle_sec1-1_R_title::after {
+    position: absolute;
+    content: '___________________________________';
+}
+
+#Middle_section1-1_R span:nth-child(2) {
+    margin-bottom: 10%;
+}
+
+#Middle_section1-1_R span:nth-child(3) {
+    margin-bottom: 15%;
+}
+
+#M_sec1-1_LTimg,
+#M_sec1-1_LB_Limg,
+#M_sec1-1_LB_Rimg {
+    width: 100%;
+}
+
+.M_sec1-1_fontset {
+    font-size: 15px;
+    font-family: '微軟正黑體';
+    color: #CC804D;
+}

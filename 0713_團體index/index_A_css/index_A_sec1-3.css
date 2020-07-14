@@ -1,0 +1,75 @@
+#Middle_section1-3{
+    width: 100%;
+    background-color: #BDA591;
+}
+#Middle_section1-3_container{
+    width: 100%;
+    height: 100%;
+    padding: 70px 8.333333333vw;
+}
+#M_sec1-3_top{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#M_sec1-3_top_img{
+    width: 25%;
+    margin-right: 50px;
+}
+.M_sec1-3_top_imgset{
+    width: 100%;
+}
+#M_sec1-3_top_font{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    overflow: hidden;
+}
+.Middle_section1-3_title_fontset{
+    position: relative;
+}
+.Middle_section1-3_title_fontset::after{
+    position: absolute;
+    content: '____________________________';
+}
+#M_sec1-3_top_font .Middle_section1-3_fontset:nth-child(2){
+    margin-bottom: 30px;
+}
+#M_sec1-3_bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#M_sec1-3_bottom_left{
+    width: 45%;
+    height: 100%;
+}
+.M_sec1-3_bottom_left_imgset{
+   width: 100%;
+   margin-bottom: 5px;
+}
+#M_sec1-3_bottom_right{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 45%;
+}
+.M_sec1-3_bottom_right_imgset{
+   width: 100%;
+   margin-bottom: 5px;
+}
+#Middle_section1-3_cover{
+   width: 100px;
+}
+
+.Middle_section1-3_title_fontset{
+    font-size: 28px;
+    font-family: '微軟正黑體';
+    color: #624939;
+    margin-bottom: 45px;
+}
+.Middle_section1-3_fontset{
+    font-size: 15px;
+    font-family: '微軟正黑體';
+    color: #624939;
+}
