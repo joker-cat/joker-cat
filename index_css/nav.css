@@ -100,7 +100,7 @@
     width: 245px;
     height: 25px;
     position: absolute;
-    bottom: 80px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -154,6 +154,7 @@
 a:link{
     /* 設定還沒有瀏覽過的連結 */
     text-decoration:none;
+    color: unset;
     }
     a:visited {
     /* 設定已經瀏覽過的連結 */
@@ -169,4 +170,6 @@ a:link{
     a:active {
     /* 設定正在點選的連結 */
     text-decoration:none;
+    color: unset;
     }
+    /* 右邊固定區塊 */

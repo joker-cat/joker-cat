@@ -1,7 +1,3 @@
-
-
-/* ------------------------------ */
-
 #my_section{
     overflow: hidden;
     width: 100%;
@@ -26,4 +22,25 @@
     min-width: 100%;
     min-height: 100%;
     transform: translate(-50%,-50%);
+}
+#section1_LOGO{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 360px;
+}
+#section1_fontcover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+}
+#section1_font1{
+    font-size: 107px;
+    font-family: '小塚明朝 Pro';
+    color: #FFFFFF;
+    line-height: 1;
+    margin-bottom: 10px;
 }
