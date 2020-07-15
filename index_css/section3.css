@@ -1,0 +1,131 @@
+#section3{
+    width: calc(100% - 70px);
+    padding: 55px 0 80px 0;
+    position: relative;
+    background-image: url('../index_img/section02/s02-10.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#container3{
+    width: 100%;
+    max-width: 1380px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+#container3_top{
+    width: 100%;
+    margin-bottom: 30px;
+}
+#container3_title{
+    width: 255px;
+    height: 135px;
+    margin-left: 495px;
+    background-image: url('../index_img/section02/s02-01.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+#container3_center{
+    width: 100%;
+}
+#container3_center1,#container3_center2,#container3_center3{
+    width: 100%; 
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container3_center1_L{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.container3_center1_R{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+#container3_center .imgcon img{
+    width: 100%;
+}
+
+#square1,
+#square2,
+#square3,
+#square4,
+#square5,
+#square6{
+    width: 90px;
+    height: 90px;
+    margin-top: 25px;
+}
+.container3_font1{
+    width: 250px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 45px;
+    font-size: 28px;
+}
+.container3_font2{
+    width: 250px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 45px;
+    font-size: 22px;
+}
+#imgcon1,
+#imgcon2,
+#imgcon3,
+#imgcon4,
+#imgcon5,
+#imgcon6{
+    width: 370px;
+    height: 370px;
+    /* border-radius: 50%; */
+}
+#square1{background-image: url('../index_img/section02/s02-03.svg');background-repeat: no-repeat ;}
+#square2{background-image: url('../index_img/section02/s02-04.svg');background-repeat: no-repeat ;}
+#square3{background-image: url('../index_img/section02/s02-05.svg');background-repeat: no-repeat ;}
+#square4{background-image: url('../index_img/section02/s02-06.svg');background-repeat: no-repeat ;}
+#square5{background-image: url('../index_img/section02/s02-07.svg');background-repeat: no-repeat ;}
+#square6{background-image: url('../index_img/section02/s02-08.svg');background-repeat: no-repeat ;}
+
+#sec3_bg{
+    position: absolute;
+    background-image:url('../index_img/section02/s02-02.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 750px;
+    height: 875px;
+    top: -205px;
+    left: 0;
+}
+
+#sec3_bg1{
+    position: absolute;
+    background-image:url('../index_img/section02/s02-11.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 225px;
+    height: 225px;
+    bottom: -112px;
+    left: 95px;
+    z-index: 2;
+}
+.sec3_fontset1{
+    font-size: 28px;
+    font-family: '小塚明朝 Pro';
+    color: #FFFFFF;
+}
+.sec3_fontset2{
+    font-size: 22px;
+    font-family: '小塚ゴシック Pr6N';
+    color: #FFFFFF;
+}
