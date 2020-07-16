@@ -31,6 +31,9 @@
             margin: 0;
             padding: 0;
         }
+        html {
+            scroll-behavior: smooth;
+        }
 
     </style>
 </head>
@@ -41,7 +44,7 @@
                 <video id="video_size" loop="true" autoplay="autoplay"  muted="true">
                     <source type="video/mp4" src="./index_video/C.mp4"></source>
                 </video>
-                <img id="section1_LOGO" src="./index_img/logo-white.svg" alt="">
+                <img id="section1_LOGO" src="./index_img/logo-gray-01.svg" alt="">
                 <div id="section1_fontcover">
                     <span id="section1_font1">とても美しい瞬間でした</span>
                     <span><!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In  -->
@@ -116,7 +119,12 @@
              </div>   
             <div id="navbar">
                 <div id="burger">
-                    <img src="./index_img/burger.png" style="width: 100%;" alt="">
+                    <img src="./index_img/burger.svg" style="width: 100%;" alt="">
+                </div>
+                <div id="backtogo">
+                    <a href="#section1">
+                        <img src="./index_img/backtotop.svg" alt="">
+                    </a>    
                 </div>
                 <div id="navbar_logo"></div>
                 <div id="menu_container">
@@ -633,11 +641,11 @@
                         <span class="footer_font2">營業時間  |  9:00～19:00（※最晚歸還18:30）|</span>
                     </div>
                     <div id="container_footerright">
-                        <span class="footer_font2">首頁 / ホーム</span>
-                        <span class="footer_font2">和服介紹 / 着物紹介</span>
-                        <span class="footer_font2">體驗流程 / 消費プロセス</span>
-                        <span class="footer_font2">包套方案 / 体験セット</span>
-                        <span class="footer_font2">常見問題 / よくある問題</span>
+                      <a href="./index.html"><span class="footer_font2">首頁 / ホーム</span></a>
+                      <a href="./index_A.html"><br><span class="footer_font2">和服介紹 / 着物紹介</span></a>
+                      <a href="./index_C.html"><br><span class="footer_font2">體驗流程 / 消費プロセス</span></a>
+                      <a href="./index_B.html"><br><span class="footer_font2">包套方案 / 体験セット</span></a>
+                      <a href="./index_D.html"><br><span class="footer_font2">常見問題 / よくある問題</span></a>
                     </div>
                 </div>
             </div>

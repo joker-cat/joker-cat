@@ -34,7 +34,7 @@
 
 .M_sec4_left_font1 {
     font-size: 28px;
-    font-family: '微軟正黑體';
+    font-family: 'Microsoft JhengHei';
     color: #E66446;
 }
 
@@ -56,7 +56,7 @@
 
 .M_sec4_left_font2:nth-child(3) {
     font-size: 15px;
-    font-family: '微軟正黑體';
+    font-family: 'Microsoft JhengHei';
     color: #636466;
     margin-bottom: 1vw;
 }
@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
     font-size: 15px;
-    font-family: '微軟正黑體';
+    font-family: 'Microsoft JhengHei';
     color: #636466;
 }
 

@@ -21,7 +21,7 @@
 
 .M_sec5_left_font1 {
     font-size: 28px;
-    font-family: '微軟正黑體';
+    font-family: 'Microsoft JhengHei';
     color: #E66446;
     margin-top: 200px;
     margin-bottom: 50px;
@@ -29,7 +29,7 @@
 
 .M_sec5_left_font2 {
     font-size: 15px;
-    font-family: '微軟正黑體';
+    font-family: 'Microsoft JhengHei';
     color: #636466;
 }
 
@@ -86,6 +86,6 @@
     position: absolute;
     top: 20%;
     font-size: 15px;
-    font-family: '微軟正黑體';
+    font-family: 'Microsoft JhengHei';
     color: #636466;
 }

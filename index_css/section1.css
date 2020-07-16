@@ -1,3 +1,8 @@
+@font-face {
+    font-family: KozMinPro-Medium;
+    src: url('../KozMinPro-Medium_font/KozMinPro-Medium.otf');
+  }
+
 #my_section{
     overflow: hidden;
     width: 100%;
@@ -39,7 +44,7 @@
 }
 #section1_font1{
     font-size: 107px;
-    font-family: '小塚明朝 Pro';
+    font-family: 'KozMinPro-Medium';
     color: #FFFFFF;
     line-height: 1;
     margin-bottom: 10px;

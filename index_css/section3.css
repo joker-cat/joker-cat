@@ -1,3 +1,7 @@
+@font-face {
+    font-family: KozMinPro-Medium;
+    src: url('../KozMinPro-Medium_font/KozMinPro-Medium.otf');
+  }
 #section3{
     width: calc(100% - 70px);
     padding: 55px 0 80px 0;
@@ -121,11 +125,11 @@
 }
 .sec3_fontset1{
     font-size: 28px;
-    font-family: '小塚明朝 Pro';
+    font-family: 'KozMinPro-Medium';
     color: #FFFFFF;
 }
 .sec3_fontset2{
     font-size: 22px;
-    font-family: '小塚ゴシック Pr6N';
+    font-family: 'KozMinPro-Medium';
     color: #FFFFFF;
 }

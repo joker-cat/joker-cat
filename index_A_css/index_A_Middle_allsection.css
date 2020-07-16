@@ -1,3 +1,7 @@
+@font-face {
+    font-family: KozMinPro-Medium;
+    src: url('../KozMinPro-Medium_font/KozMinPro-Medium.otf');
+  }
 #Middle_allsection {
     width: calc(79.2% - 70px);
     margin-left: 20.8%;
@@ -54,13 +58,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3.38vw;
-    font-family: '小塚明朝 Pro';
+    font-family: 'KozMinPro-Medium';
     color: white;
 }
 
 #middle_con>span {
     font-size: 1.46vw;
-    font-family: '小塚明朝 Pro';
+    font-family: 'KozMinPro-Medium';
     color: #698D76;
     line-height: 2.09vw;
 }

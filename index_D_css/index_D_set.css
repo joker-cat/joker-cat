@@ -1,3 +1,8 @@
+@font-face {
+    font-family: KozMinPro-Medium;
+    src: url('../KozMinPro-Medium_font/KozMinPro-Medium.otf');
+  }
+
 #middle-all-section {
     width: calc(79.2% - 70px);
     margin-left: 20.8%;
@@ -85,7 +90,6 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: red;
 }
 
 #qa-box {
@@ -103,7 +107,7 @@ a:hover {
     margin: 0 30px;
     text-align: center;
     font-size: 1.3vw;
-    font-family: '小塚明朝 Pr6N';
+    font-family: 'KozMinPro-Medium';
     text-decoration: none;
     z-index: 9;
 
@@ -146,7 +150,7 @@ a:hover {
     list-style: 28px;
     margin-left: 30px;
     color: #4D4D4D;
-    font-family: '小塚明朝 Pr6N';
+    font-family: 'KozMinPro-Medium';
 }
 
 
@@ -175,10 +179,10 @@ a:hover {
 
 .btn-link {
     color: black;
-    font-family: '小塚ゴシック Pr6N';
+    font-family: 'KozMinPro-Medium';
 }
 
 .card-body {
     color: black;
-    font-family: '小塚ゴシック Pr6N';
+    font-family: 'KozMinPro-Medium';
 }

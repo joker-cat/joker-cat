@@ -1,3 +1,8 @@
+@font-face {
+    font-family: KozMinPro-Medium;
+    src: url('../KozMinPro-Medium_font/KozMinPro-Medium.otf');
+  }
+
 #middle-all-section {
     width: calc(79.2% - 70px);
     margin-left: 20.8%;

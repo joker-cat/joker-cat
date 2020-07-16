@@ -1,3 +1,8 @@
+@font-face {
+    font-family: KozMinPro-Medium;
+    src: url('../KozMinPro-Medium_font/KozMinPro-Medium.otf');
+  }
+
 #Middle_section1 {
     width: 100%;
     padding: 0 8.333333333vw;
@@ -46,25 +51,25 @@
 
 .M_sec1_right_font1:nth-child(1) {
     font-size: 28px;
-    font-family: '微軟正黑體';
+    font-family: 'Microsoft JhengHei';
     margin-bottom: 3vw;
 }
 
 .M_sec1_right_font1:nth-child(2) {
     font-size: 15px;
-    font-family: '微軟正黑體';
+    font-family: 'Microsoft JhengHei';
     margin-bottom: 0.781vw;
 }
 
 .M_sec1_right_font1:nth-child(3) {
     font-size: 15px;
-    font-family: '微軟正黑體';
+    font-family: 'Microsoft JhengHei';
     margin-bottom: 3.125vw;
 }
 
 .M_sec1_right_font2 {
     font-size: 15px;
-    font-family: '微軟正黑體';
+    font-family: 'Microsoft JhengHei';
     position: absolute;
     bottom: 115px;
 }

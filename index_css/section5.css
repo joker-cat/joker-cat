@@ -1,3 +1,7 @@
+@font-face {
+    font-family: KozMinPro-Medium;
+    src: url('../KozMinPro-Medium_font/KozMinPro-Medium.otf');
+  }
 #section5{
     width: calc(100% - 70px);
     /* height: 1151px; */
@@ -56,7 +60,7 @@
     width: 100%;
     height: 55px;
     font-size: 28px;
-    font-family: 'Lucida Bright*';
+    font-family: 'KozMinPro-Medium';
     text-align: left;
     line-height: 55px;
     color:#698D76;
@@ -97,7 +101,7 @@
 .container5_font2{
     width: 100%;
     font-size: 23px;
-    font-family: '小塚ゴシック Pr6N';
+    font-family: 'KozMinPro-Medium';
     color: #474747;
     line-height: 30px;
 }

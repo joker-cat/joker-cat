@@ -1,3 +1,7 @@
+@font-face {
+    font-family: KozMinPro-Medium;
+    src: url('../KozMinPro-Medium_font/KozMinPro-Medium.otf');
+  }
 #section6{
     width: calc(100% - 70px);
     padding: 120px 0 70px 0 ;
@@ -38,7 +42,7 @@
     justify-content: flex-start;
     text-align: center;
     font-size: 23px;
-    font-family: '小塚ゴシック Pr6N*';
+    font-family: 'KozMinPro-Medium';
     color:#79AEAA;
 }
 
@@ -104,7 +108,7 @@
     top: -90px;
     left: 70px;
     font-size: 23px;
-    font-family: 'KozMinPr6N*';
+    font-family: 'KozMinPro-Medium';
     writing-mode: vertical-lr;
     padding: 15px 10px;
     color: #FFFFFF;
@@ -118,8 +122,8 @@
 .container6_money{
     width: 290px;
     height: 100%;
-    font-size: 60px;
-    font-family: 'Lucida Bright*';
+    font-size: 50px;
+    font-family: 'KozMinPro-Medium';
     line-height: 60px;
     color: #F1C49D;
 }

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: KozMinPro-Medium;
+    src: url('../KozMinPro-Medium_font/KozMinPro-Medium.otf');
+  }
+
 #footer {
     width: 100%;
     background-color: #487557;
@@ -46,13 +51,13 @@
 
 span.footer_font1 {
     font-size: 23px;
-    font-family: '小塚明朝 Pro';
+    font-family: 'KozMinPro-Medium';
     color: #FFFFFF;
 }
 
 span.footer_font2 {
     font-size: 15px;
-    font-family: '小塚ゴシック Pro';
+    font-family: 'KozMinPro-Medium';
     color: #FFFFFF;
 }
 
@@ -61,6 +66,6 @@ span.footer_font2 {
     height: 15px;
     margin: auto;
     font-size: 15px;
-    font-family: '小塚ゴシック Pro';
+    font-family: 'KozMinPro-Medium';
     color: #FFFFFF;
 }
