@@ -17,6 +17,14 @@
     background-position: top; */
     transition-duration: 0.5s;
 }
+
+#navbar.active{
+    width: 35vw;
+}
+
+#navbar.active_920{
+    height: 40vh;
+}
 #backtogo{
     position: absolute;
     left: 25px;
@@ -55,15 +63,6 @@
 #navbar_container{
     width: 90%;
     margin: auto;
-}
-
-#navbar.active{
-    right: 0px;
-    width: 35vw;
-}
-
-#navbar.active_920{
-    height: 40vh;
 }
 
 #menu_container{
@@ -211,12 +210,7 @@ a:link{
     /* 右邊固定區塊 */
 
     @media(max-width:1420px){
-        #navbar{
-            width: 70px;
-            right:0;
-        }
         #navbar.active{
-            right: 0px;
             width: 45vw;
         }
     }
@@ -224,12 +218,14 @@ a:link{
         #navbar{
             width: 100%;
             height: 70px;
+            right: 0;
+        }
+        #navbar.active{
             right: unset;
+            width: 100%;
+            height: 40vh;
         }
         #backtogo{
             display: none;
         }
     }
-/* 1920 35
-1420 45 
-920 放上方*/
