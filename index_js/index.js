@@ -10,8 +10,46 @@ jQuery(document).ready(function ($) {
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
+        pauseOnHover: false,
+    });
+    $('.slider2').slick({
+        dots: false,
+        infinite: true,
+        draggable: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        arrows: false,
+        pauseOnHover: false,
     });
 
+    $('.slider3').slick({
+        dots: false,
+        infinite: true,
+        draggable: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        arrows: false,
+        pauseOnHover: false,
+    });
+
+    $('.slider4').slick({
+        dots: false,
+        infinite: true,
+        draggable: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        arrows: false,
+        pauseOnHover: false,
+    });
     $('#buttonn').click(function () {
 
         $('.slider1').slick('slickNext');
@@ -33,41 +71,7 @@ jQuery(document).ready(function ($) {
         $('.slider1').slick('slickPrev');
     });
 
-    $('.slider2').slick({
-        dots: false,
-        infinite: true,
-        draggable: false,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        arrows: false,
-    });
 
-    $('.slider3').slick({
-        dots: false,
-        infinite: true,
-        draggable: false,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        arrows: false,
-    });
-
-    $('.slider4').slick({
-        dots: false,
-        infinite: true,
-        draggable: false,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        arrows: false,
-    });
 
     $('#burger').click(function () {
         var a = document.body.offsetWidth;
@@ -78,19 +82,22 @@ jQuery(document).ready(function ($) {
             $('#navbar').toggleClass('active_920');
         }
 
-
         if ($('#burger>img').attr('src') == './index_img/burger.svg') {
             $('#burger>img').attr('src', './index_img/櫻花-10.png');
             $('#menu_container').css('opacity', '1');
             $('#navbar_logo').css('opacity', '1');
             $('#nav_allfont').css('opacity', '1');
+            $('#backtogo').css('display', 'none');
 
         } else {
             $('#burger>img').attr('src', './index_img/burger.svg');
             $('#menu_container').css('opacity', '0');
             $('#navbar_logo').css('opacity', '0');
             $('#nav_allfont').css('opacity', '0');
-
+            $('#backtogo').css('display', 'block');
+            if (a <= 920) {
+                $('#backtogo').css('display', 'none');
+            }
         }
     });
 });
@@ -113,6 +120,13 @@ jQuery(document).ready(function () {
         var a = document.body.offsetWidth;
         a = a + 17;  //包含右方滾軸17px
         console.log(a);
+        if(a > 920 && $('#navbar').hasClass('active')){
+            $('#backtogo').css('display', 'none');
+        }
+        
+        if(a <= 920 && $('#navbar').hasClass('')){
+            $('#backtogo').css('display', '');
+        }
 
         if (a > 920 && $('#navbar').hasClass('active_920')) {
             $('#navbar').removeClass('active_920');
