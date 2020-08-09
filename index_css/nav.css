@@ -53,6 +53,7 @@
     width: 40px;
     height: 40px;
     position: absolute;
+    z-index: 3;
     top: 20px;
     right: 15px;
 }
@@ -297,6 +298,8 @@ a:link{
             flex-direction: column;
         }
         #menu_container div ul{
+            position: relative;
+            z-index: 2;
             list-style-type: decimal;
             list-style-position:inside;
             writing-mode: unset;
@@ -316,11 +319,13 @@ a:link{
         }
         #follow_us {
             width: unset;
-            height: auto;
+            height: 100%;
             font-size: 14px;
             font-family: 'Lucida Bright';
             border-right: 1px solid black;
-            line-height: 20px;
+            line-height: 25px;
+            margin-right: 3vw;
+            padding-right: 3vw;
         }
         #nav_icon{
             width: unset;
@@ -330,8 +335,7 @@ a:link{
             margin-left: 5px;
         }
         #menu_icon{
-            width: 90%;
-            height: auto;
+            width: 100%;
             position: unset;
             bottom: 0;
             left: unset;
