@@ -4,22 +4,24 @@
   }
 
 #navbar{
-    width: 35vw;
-    height: 100%;
+    width: 70px;
+    height: 100vh;
     position:fixed;
-    right:calc(-35vw + 70px);
+    right:0;
     top: 0;
     z-index: 10;
-    background-image: url('../index_img/n01-01.svg');
+    background-color: beige;
+    /* background-image: url('../index_img/n01-01.svg');
     background-repeat: no-repeat;
-    background-size: 100vh;
-    background-position: top;
+    background-size: cover;
+    background-position: top; */
     transition-duration: 0.5s;
 }
 #backtogo{
     position: absolute;
     left: 25px;
     bottom: 25px;
+    z-index: 2;
     overflow: hidden;
     width: 25px;
     opacity: 1;
@@ -42,34 +44,37 @@
 #burger{
     width: 40px;
     height: 40px;
-    margin: 10;
     position: absolute;
     top: 20px;
-    left: 15px;
+    right: 15px;
 }
-
+/* #nav_con{
+    width: 100%;
+    height: 100%;
+} */
 #navbar_container{
-    width: 540px;
-    height: 100vh;
-    background-color: rgb(110, 110, 46);
+    width: 90%;
     margin: auto;
 }
 
 #navbar.active{
     right: 0px;
+    width: 35vw;
 }
+
+#navbar.active_920{
+    height: 40vh;
+}
+
 #menu_container{
     position: absolute;
-    top: 170px;
-    left: 13%;
+    top: 150px;
+    left: 5%;
     /* transform: translate(calc(-50% + 5px),-50%); */
     opacity: 0;
-    transition-duration: 0.8s;
-    width: 82%;
-    padding: 10px;
-    height: 10vw;
-    min-height: 25vw;
-    max-height: 28vw;
+    transition-duration: 0.3s;
+    width: 90%;
+    padding-top: 50px;
 }
 #menu_container>div{
     position: relative;
@@ -78,11 +83,9 @@
     height: 100%;
 }
 #menu_container>div>img{
-    position: absolute;
-    top: 0px;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
+    display: block;
+    width: 90%;
+    margin: auto;
 }
 #divul{
     position: absolute;
@@ -98,15 +101,17 @@
 }
 
 #navbar_logo{
-    width: 360px;
-    height: 40px;
+    width: 90%;
+    height: 110px;
     position: absolute;
-    left: 15%;
-    top: 110px;
+    left: 5%;
+    top: 60px;
     background-image: url('../index_img/n01-02.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    opacity: 0;
+    transition-duration: 0.3s;
 }
 #menu_container div ul{
     list-style-type:none;
@@ -124,13 +129,14 @@
     font-family: 'KozMinPro-Medium';
 }
 #menu_icon{
-    width: 245px;
+    width: 90%;
     height: 25px;
     position: absolute;
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    justify-content: center;
 }
 #follow_us{
     width: 100px;
@@ -151,11 +157,14 @@
     margin-left: 5px;
 }
 #nav_allfont{
+    width: 90%;
     position: absolute;
-    bottom: 60px;
-    left: 15%;
+    bottom: 30px;
+    left: 5%;
     display: flex;
     flex-direction: column;
+    transition-duration: 0.3s;
+    opacity: 0;
 }
 #nav_allfont span:nth-child(1){
     font-size: 23px;
@@ -192,7 +201,7 @@ a:link{
     /* 設定滑鼠移經的連結 */
     text-decoration:none;
     color: brown;
-    font-size: 25px;
+    /* font-size: 25px; */
     }
     a:active {
     /* 設定正在點選的連結 */
@@ -200,3 +209,27 @@ a:link{
     color: unset;
     }
     /* 右邊固定區塊 */
+
+    @media(max-width:1420px){
+        #navbar{
+            width: 70px;
+            right:0;
+        }
+        #navbar.active{
+            right: 0px;
+            width: 45vw;
+        }
+    }
+    @media(max-width:920px){
+        #navbar{
+            width: 100%;
+            height: 70px;
+            right: unset;
+        }
+        #backtogo{
+            display: none;
+        }
+    }
+/* 1920 35
+1420 45 
+920 放上方*/

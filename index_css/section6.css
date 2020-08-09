@@ -18,7 +18,6 @@
     overflow: hidden;
     position: relative;
     z-index: 2;
- 
 }
 #container6_top{
     width: 100%;
@@ -29,12 +28,13 @@
 #container6_title{
     width: 255px;
     height: 135px;
+    zoom: 1;
     margin-left: 100px;
     margin-right: 125px;
     background-image: url('../index_img/section05/s05-04.svg');
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
 }
 #container6_font1{
     display: flex;
@@ -48,20 +48,16 @@
 
 #container6_swiper{
     width: 100%;
-    height: 600px;
-
     padding: 0 95px;
     position: relative;
     margin-bottom: 65px;
 }
 .swiper-container{
     width: 100%;
-    height: 100%;
 }
 
 .swiper-slide {
-    width: 570px;
-    margin-top: 55px;
+    margin-top: 125px;
 }
 .TT{
     width: 100%;
@@ -74,7 +70,6 @@
 }
 .container6_swiper_img{
     width: 100%;
-    height: 400px;
     position: relative;
     margin-bottom: 30px;
 }
@@ -89,7 +84,8 @@
     height: 55px;
     position: absolute;
     right: 30px;
-    top: 220px;
+    top: 50%;
+    z-index: 2;
     background-image: url('../index_img/section05/s05-10.svg');
 }
 
@@ -98,11 +94,11 @@
     height: 55px;
     position: absolute;
     left: 30px;
-    top: 220px;
+    top: 50%;
+    z-index: 2;
     background-image: url('../index_img/section05/s05-09.svg');
 }
 .container6_swiper_font1{
-    
     background-color: #EC6D52;
     position: absolute;
     top: -90px;
@@ -129,21 +125,21 @@
 }
 
 #sec6more{
-    width: 180px;
+    width: 200px;
     height: 50px;
+    zoom: 1;
     background-image:url('../index_img/section05/s05-03.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: auto;
+    padding: 0;
     display: block;
     background-color:transparent;/*去除按鈕預設背景*/
     border: 0;/*去除按鈕預設邊線*/
     /* 行內元素 img input 無法直接用marign 
        除非包個父層 OR 下display:block */
 }
-
-
 .sec6but{
     width:200px;
     height:50px;
@@ -164,5 +160,144 @@
     position: absolute;
     top: -80px;
     right: 0;
-    
+}
+
+@media(max-width:1420px){
+    #container6_top{
+        margin-bottom: 35px;
+    }
+    #container6_title{
+        height: 150px;
+        margin-right: 100px;
+    }
+    .swiper-slide {
+        margin-top: 130px;
+    }
+    #container6_font1{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        font-size: 15px;
+        line-height: 2.5;
+        font-family: 'KozMinPro-Medium';
+        color:#79AEAA;
+    }
+    .container6_money{
+        font-size: 30px;
+    }
+    .container6_swiper_img{
+        margin-bottom: unset;
+    }
+    .swiper-button-next1{
+        top: 57%;
+        transform: translateY(-50%);
+    }
+    .swiper-button-prev1{
+        top: 57%;
+        transform: translateY(-50%);
+    }
+    .container6_swiper_font1{
+        top: -150px;
+        left: 50px;
+        font-size: 2vw;
+        padding: 15px 10px;
+        line-height: 1;
+    }
+    #sec6_bg1{
+        width: 545px;
+        height: 675px;
+    }
+}
+@media(max-width:920px){
+    #section6{
+        width: 100%;
+        padding: 80px 0 70px 0 ;
+    }
+    #container6{
+        width: 100%;
+        max-width: 80%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+    }
+    #sec6_bg1{
+        width: 70vw;
+        height: 95vw;
+        top: -8.69vw;
+        right: 0;
+    }
+    #container6_top{
+        height: unset;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    #container6_title{
+        zoom: 0.65;
+        margin-left: unset;
+        margin-right: 3.26vw;
+        align-self: center;
+    }
+    #container6_font1{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: center;
+        text-align: left;
+        font-size: 2.2vw;
+        line-height: 1.2;
+        font-family: 'KozMinPro-Medium';
+        color:#79AEAA;
+    }
+    .swiper-slide {
+        margin-top: 15.8vw;
+    }
+    #container6_swiper{
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .swiper-button-next1{
+        top: 57%;
+        width: 5.97vw;
+        height: 5.97vw;
+        right: 0;
+    }
+    .swiper-button-prev1{
+        top: 57%;
+        width: 5.97vw;
+        height: 5.97vw;
+        left: 0;
+    }
+    .container6_swiper_font1{
+        top: -19.56vw;
+        left: 10.86vw;
+        font-size: 3.26vw;
+        letter-spacing: 3px;
+        padding: 1.63vw 1.08vw;
+        line-height: 1;
+    }
+    .container6_swiper_img{
+        margin-bottom: 20px;
+    }
+
+    .container6_price{
+        width: 100%;
+        height: 6.52vw;
+    }
+    .container6_money{
+        align-self: center;
+        width: 290px;
+        height: 100%;
+        font-size: 5.43vw;
+        line-height: 1;
+        color: #F1C49D;
+    }
+    .sec6but{
+        padding: 0;
+    }
+    #sec6more{
+        zoom: 0.75;
+        padding: 0;
+    }
 }

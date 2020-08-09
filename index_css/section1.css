@@ -8,13 +8,16 @@
     width: 100%;
 }
 #section1{
-    width: 100%;
+    width: calc(100% - 70px);
     height: 100vh;
     background-color: cadetblue;
     display: flex;
+    overflow: hidden;
+    position: relative;
 }
+
 #video{
-    width: calc(100% - 70px);
+    width: 100%;
     height: 100%;
     background-color: coral;
     overflow: hidden;
@@ -48,4 +51,42 @@
     color: #FFFFFF;
     line-height: 1;
     margin-bottom: 10px;
+}
+
+@media(max-width: 1420px){
+    #section1{
+        height: 75vh;
+    }
+
+    #section1_fontcover{
+        bottom: 30px;
+        left: 30px;
+    }
+    #section1_font1{
+        font-size: 90px;
+    }
+}
+@media(max-width:920px){
+    #section1{
+        width: 100%;
+        height: 60vh;
+        padding-top: 70px;
+    }
+    #section1_LOGO{
+        top: 20px;
+        left: 20px;
+        width: 40vw;
+    }
+    #section1_fontcover{
+        bottom: 20px;
+        left: 20px;
+    }
+    #section1_font1{
+        font-size: 6.5vw;
+    }
+    svg{
+        width: 43.47vw;
+        height: auto;
+    }
+
 }
