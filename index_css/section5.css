@@ -177,7 +177,7 @@
         display: block;
         width: 100%;
         background-color: rgb(105, 75, 38);
-        padding: 85px 0 60px 0;
+        padding: 10.8vw 0 13vw 0;
         background-image: url('../index_img/section04/s04-01.svg');
         background-repeat: no-repeat;
         background-position: center;
@@ -188,6 +188,10 @@
         width: 40.7vw;
         height: 75vw;
         top: -42.9vw;
+    }
+    #container5_bg2 {
+        height: 70px;
+        bottom: -55px;
     }
     #container5_top{
         zoom: 0.7;
@@ -227,5 +231,14 @@
     .container5_font2{
         font-size: 3vw;
         line-height: 1.5;
+    }
+}
+@media(max-width:420px){
+    #container5_top {
+        zoom: 0.4;
+        margin-bottom: 50px;
+    }
+    .container5_img {
+        margin-bottom: 15px;
     }
 }

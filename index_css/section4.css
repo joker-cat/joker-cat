@@ -262,3 +262,8 @@
         left: 10%;
     }
 }
+@media(max-width:420px){
+    #section4_920{
+        padding: 25vw 0 50px 0;
+    }
+}

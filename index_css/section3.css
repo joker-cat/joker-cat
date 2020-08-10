@@ -296,3 +296,8 @@
         left: 0;
     }
 }
+@media(max-width:920px){
+    #container3_title {
+        zoom: 0.4;
+    }
+}
