@@ -75,7 +75,10 @@ jQuery(document).ready(function ($) {
 
     $('#burger').click(function () {
         var a = document.body.offsetWidth;
-        a = a + 17;  //包含右方滾軸17px
+        var b = window.innerHeight; //抓取網頁可見高度
+        
+        //a = a + 17;  //包含右方滾軸17px
+
         if (a > 920) {
             $('#navbar').toggleClass('active');
         } else {
@@ -99,6 +102,18 @@ jQuery(document).ready(function ($) {
                 $('#backtogo').css('display', 'none');
             }
         }
+
+
+    // 判斷手機方向：
+    //     window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
+    //         // if (window.orientation === 180 || window.orientation === 0) {
+                
+    //         // }
+    //         if (window.orientation === 90 || window.orientation === -90 ){
+    //             console.log(123);
+    //             $('#nav_allfont').css('opacity','0');
+    //         }
+    //      }, false);
     });
 });
 
@@ -115,27 +130,50 @@ $('#backtogo').click(function () {
 })
 
 jQuery(document).ready(function () {
-    $(window).resize(function (e) {
 
-        var a = document.body.offsetWidth;
-        a = a + 17;  //包含右方滾軸17px
-        console.log(a);
+    $(window).resize(function (e) {
+        var b = window.innerHeight; //抓取網頁可見高度
+        var a = document.body.offsetWidth;   
+        //a = a + 17;  //包含右方滾軸17px
+
+        //console.log(a);
+        // console.log(b);
+
+        if(b > 770 && $('#navbar').hasClass('active')){
+            $('#nav_allfont').css('opacity','1');
+        }
+
+        if(b <= 770 && $('#navbar').hasClass('active_920')){
+            $('#nav_allfont').css('opacity','1');
+        }
+
         if(a > 920 && $('#navbar').hasClass('active')){
             $('#backtogo').css('display', 'none');
         }
-        
+
+        if(a > 920){
+            $('#backtogo').css('display', 'none');
+        }
         if(a <= 920 && $('#navbar').hasClass('')){
-            $('#backtogo').css('display', '');
+            $('#backtogo').css('display', 'none');
+        }
+        if(a <= 920){
+            $('#backtogo').css('display', 'none');
+        }
+        if(a > 920 && $('#navbar').hasClass('')){
+            $('#backtogo').css('display', 'block');
         }
 
         if (a > 920 && $('#navbar').hasClass('active_920')) {
             $('#navbar').removeClass('active_920');
             $('#navbar').addClass('active');
+            $('#nav_allfont').css('opacity','1');
         }
         if (a <= 920 && $('#navbar').hasClass('active')) {
             $('#navbar').removeClass('active');
             $('#navbar').addClass('active_920');
             $('#backtogo').css('display', 'none');
+            $('#nav_allfont').css('opacity','1');
         }
 
         resize();

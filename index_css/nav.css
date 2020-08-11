@@ -19,8 +19,7 @@
 }
 
 #navbar.active_920{
-    height: 40vh;
-    max-height: 600px;
+    height: 250px;
 }
 #backtogo{
     position: absolute;
@@ -398,7 +397,7 @@ a:link{
             right: 15px;
         }
         #navbar.active_920{
-            height: 40vh;
+            height: 230px;
         }
         #nav_allfont span:nth-child(1){
             font-size: 3vw;
