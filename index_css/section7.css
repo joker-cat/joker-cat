@@ -161,8 +161,8 @@
         margin-bottom: 55px;
     }
     #container7_bg1{
-        width: 340px;
-        height: 545px;
+        width: 400px;
+        height: 670px;
     }
 }
 @media(max-width: 920px){
@@ -177,6 +177,10 @@
     #container7_title{
         zoom: 0.7;
         margin-bottom: 30px;
+    }
+    #container7_bg1{
+        width: 43.4vw;
+        height: 72.5vw;
     }
     #container7_bg2{
         margin-right: 30px;
