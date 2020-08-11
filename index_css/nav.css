@@ -20,6 +20,7 @@
 
 #navbar.active_920{
     height: 40vh;
+    max-height: 600px;
 }
 #backtogo{
     position: absolute;
