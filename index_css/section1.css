@@ -7,8 +7,10 @@
     overflow: hidden;
     width: 100%;
     position: relative;
+    z-index: 10;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    display: none;
 }
 
 #section1{
@@ -17,7 +19,6 @@
     background-color: cadetblue;
     display: flex;
     overflow: hidden;
-    /* position: relative; */
 }
 
 #video{

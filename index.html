@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="index_css/load.css">
     <link rel="stylesheet" href="index_css/slick_click.css">
     <link rel="stylesheet" href="index_css/nav.css">
     <link rel="stylesheet" href="index_css/section1.css">
@@ -28,21 +28,36 @@
         * {
             box-sizing: border-box;
         }
-
+        /* body::-webkit-scrollbar {
+            display: none;
+        } */
         body {
             margin: 0;
             padding: 0;
             max-width: 1920px;
+            min-height: 100vh;
             margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #DFDFDF;
+
         }
 
         html {
             scroll-behavior: smooth;
         }
+
     </style>
 </head>
 
 <body class="darkBg">
+    <div class="load">
+        <div class="spinner-text">Loading</div>
+        <div class="spinner-sector spinner-sector-red"></div>
+        <div class="spinner-sector spinner-sector-blue"></div>
+        <div class="spinner-sector spinner-sector-green"></div>
+    </div>
     <div id="my_section">
         <div id="navbar">
             <div id="burger">

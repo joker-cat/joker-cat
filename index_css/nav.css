@@ -78,6 +78,7 @@
     display: block;
     width: 90%;
     margin: auto;
+    max-height: 50vh;
 }
 #divul{
     position: absolute;
