@@ -1,6 +1,7 @@
 window.onload = function() { 
     $(".load").css('display','none');
     $("#my_section").css('display','block');
+    // $('source').play();
     var a = document.body.offsetWidth; //網頁顯示範圍不含滾軸
     var b = window.innerWidth; //瀏覽器範圍含滾軸
         b = b-17;
