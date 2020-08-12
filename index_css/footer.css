@@ -66,7 +66,7 @@ span.footer_font2{
     color: #FFFFFF;
 }
 #container_footerright>a:hover .footer_font2{
-    color: rgb(241, 63, 63);
+    color: rgb(235, 196, 138);
 }
 @media(max-width:1420px){
     #container_footer{

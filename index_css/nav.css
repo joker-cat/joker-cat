@@ -60,13 +60,13 @@
 }
 
 #menu_container{
-    position: absolute;
+    position: static;
     top: 150px;
     left: 5%;
     opacity: 0;
     transition-duration: 0.3s;
-    width: 90%;
-    padding-top: 50px;
+    width: 100%;
+    padding-top: 0;
 }
 #menu_container>div{
     position: relative;
@@ -78,7 +78,6 @@
     display: block;
     width: 90%;
     margin: auto;
-    max-height: 50vh;
 }
 #divul{
     position: absolute;
@@ -96,7 +95,9 @@
 #navbar_logo{
     width: 90%;
     height: 110px;
-    position: absolute;
+    margin-top: 50px;
+    margin-left: 5%;
+    position: static;
     left: 5%;
     top: 60px;
     background-image: url('../index_img/n01-02.svg');
@@ -111,11 +112,11 @@
     writing-mode: vertical-lr;
     margin: 0;
     width: 80%;
-    padding-top: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: auto;
+    padding-top: 15vh;
 }
 #menu_container div ul li{
     font-size: 23px;
@@ -151,7 +152,9 @@
 }
 #nav_allfont{
     width: 90%;
-    position: absolute;
+    margin-left: 5%;
+    margin-top: 30px;
+    position: static;
     bottom: 30px;
     left: 5%;
     display: flex;
@@ -227,8 +230,10 @@ a:link{
             width: 40%;
             height: 70px;
             position: absolute;
-            left: 5%;
+            left: 7%;
             top: 0;
+            margin-top: 0;
+            margin-left: 0;
         }
         #menu_container {
             position: absolute;
@@ -243,9 +248,10 @@ a:link{
             width: 45%;
             position: absolute;
             bottom: 5%;
-            left: 5%;
+            left: 7%;
             display: flex;
             flex-direction: column;
+            margin-left: 0;
         }
         #menu_container>div>img{
             display: none;
@@ -306,7 +312,7 @@ a:link{
             font-size: 14px;
             font-family: 'KozMinPro-Medium';
             line-height: 1.5;
-            text-align: center;
+            text-align: left;
             margin: 10px 5px;
         }
         #follow_us {
@@ -380,11 +386,11 @@ a:link{
             height: unset;
         }
         #nav_icon>img{
-            width: 2.55vw;
+            width: 2.4vw;
             margin-left: 5px;
         }
         #follow_us {
-            font-size: 2.55vw;
+            font-size: 2.4vw;
         }
     }
     @media(max-width:420px){
@@ -396,6 +402,9 @@ a:link{
         }
         #navbar.active_920{
             height: 230px;
+        }
+        #navbar_logo{
+            height: 50px;
         }
         #nav_allfont span:nth-child(1){
             font-size: 3vw;
@@ -421,6 +430,23 @@ a:link{
         #nav_icon>img{
             width: 2.55vw;
             margin-left: 5px;
+        }
+    }
+    @media(max-width:370px){
+        #nav_allfont span:nth-child(1){
+            font-size: 2.5vw;
+        }
+        #nav_allfont span:nth-child(2){
+            font-size: 2vw;
+            margin-bottom:10px;
+        }
+        #nav_allfont span:nth-child(2)::after{
+            font-size: 2vw;
+        }
+        #nav_allfont span:nth-child(3),
+        #nav_allfont span:nth-child(4),
+        #nav_allfont span:nth-child(5){
+            font-size: 1.5vw;
         }
     }
     /*-----------------------------*/
