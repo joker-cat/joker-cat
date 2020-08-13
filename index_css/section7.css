@@ -186,6 +186,7 @@
         margin-right: 30px;
     }
     #container7_confont{
+        width: 50%;
         height: unset;
         display: flex;
         flex-direction: column;
@@ -211,6 +212,22 @@
     }
     #container7_bottom {
         margin-bottom: 40px;
+    }
+    #container7_bg2 {
+        width: 50%;
+        height: unset;
+    }
+}
+@media(max-width:600px){
+    .container7_font1{
+        font-size: 2.5vw;
+    }
+    .container7_font2{
+        font-size: 2vw;
+    }
+    
+    .container7_font3{
+        font-size: 2.5vw;
     }
 }
 @media(max-width:420px){
