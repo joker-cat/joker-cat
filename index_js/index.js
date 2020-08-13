@@ -1,6 +1,7 @@
 window.onload = function() { 
     $(".load").css('display','none');
     $("#my_section").css('display','block');
+    AOS.init();
     swiper();
     var a = document.body.offsetWidth; //網頁顯示範圍不含滾軸
     var b = window.innerWidth; //瀏覽器範圍含滾軸
@@ -28,6 +29,7 @@ jQuery(document).ready(function ($) {
         autoplaySpeed: 2000,
         arrows: false,
         pauseOnHover: false,
+        touchMove:false,
     });
     $('.slider2').slick({
         dots: false,
@@ -40,6 +42,7 @@ jQuery(document).ready(function ($) {
         autoplaySpeed: 2000,
         arrows: false,
         pauseOnHover: false,
+        touchMove:false,
     });
 
     $('.slider3').slick({
@@ -53,6 +56,7 @@ jQuery(document).ready(function ($) {
         autoplaySpeed: 2000,
         arrows: false,
         pauseOnHover: false,
+        touchMove:false,
     });
 
     $('.slider4').slick({
@@ -66,6 +70,7 @@ jQuery(document).ready(function ($) {
         autoplaySpeed: 2000,
         arrows: false,
         pauseOnHover: false,
+        touchMove:false,
     });
     $('#buttonn').click(function () {
 
@@ -100,8 +105,13 @@ jQuery(document).ready(function ($) {
             $('#navbar').toggleClass('active_920');
         }
 
+        if(a <= 920){
+            $('#divul').css('transform', 'translateY(0)');
+        }
+
         if ($('#burger>img').attr('src') == './index_img/burger.svg') {
             $('#burger>img').attr('src', './index_img/櫻花-10.png');
+            $('#burger_cover').css('display','none');
             $('#menu_container').css('opacity', '1');
             $('#navbar_logo').css('opacity', '1');
             $('#nav_allfont').css('opacity', '1');
@@ -109,6 +119,7 @@ jQuery(document).ready(function ($) {
 
         } else {
             $('#burger>img').attr('src', './index_img/burger.svg');
+            $('#burger_cover').css('display','block');
             $('#menu_container').css('opacity', '0');
             $('#navbar_logo').css('opacity', '0');
             $('#nav_allfont').css('opacity', '0');
@@ -142,21 +153,20 @@ jQuery(document).ready(function () {
         var b = window.innerHeight; //抓取網頁可見高度
         var a = window.innerWidth;   //含滾軸
 
-        console.log("a:"+a);
-        // console.log("b:"+b);
-
         if(b > 930 && $('#navbar').hasClass('active')){
             $('#nav_allfont').css('opacity','1');
         }
-
         if(b <= 770 && $('#navbar').hasClass('active_920')){
             $('#nav_allfont').css('opacity','1');
         }
-
+        if(a <= 920){
+            $('#divul').css('transform', 'translateY(0)');
+        }else{
+            $('#divul').css('transform', 'translateX(-50%)');
+        }
         if(a > 920 && $('#navbar').hasClass('active')){
             $('#backtogo').css('display', 'none');
         }
-
         if(a > 920){
             $('#backtogo').css('display', 'none');
         }
@@ -169,7 +179,6 @@ jQuery(document).ready(function () {
         if(a > 920 && $('#navbar').hasClass('')){
             $('#backtogo').css('display', 'block');
         }
-
         if (a > 920 && $('#navbar').hasClass('active_920')) {
             $('#navbar').removeClass('active_920');
             $('#navbar').addClass('active');
