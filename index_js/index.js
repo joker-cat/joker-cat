@@ -3,6 +3,7 @@ $(document).ready(function() {
   });
 
 window.onload = function(){
+    $(".load").css('display','none');
     $("#my_section").css('display','block');
     swiper();
     var a = document.body.offsetWidth; //網頁顯示範圍不含滾軸
@@ -17,10 +18,6 @@ window.onload = function(){
         $(document).snowfall({ image: "./index_img/sakura/2.png", flakeCount: 20, minSpeed: 1,maxSpeed: 1.5, minSize: 8, maxSize: 15, });
         $(document).snowfall({ image: "./index_img/sakura/4.png", flakeCount: 20, minSpeed: 1,maxSpeed: 1.5, minSize: 8, maxSize: 15, });
   };
-
-// jQuery(document).ready(function ($) {
-   
-// });
 
 $('#backtogo').click(function () {
     $(window).scrollTop(0);
