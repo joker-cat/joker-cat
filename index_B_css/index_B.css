@@ -1,0 +1,202 @@
+@font-face {
+    font-family: KozMinPro-Medium;
+    src: url('../KozMinPro-Medium_font/KozMinPro-Medium.otf');
+  }
+
+#middle-all-section {
+    width: calc(79.2% - 70px);
+    margin-left: 20.8%;
+    background-color: #FEEEE3;
+}
+
+#banner {
+    width: 100%;
+    height: 30vw;
+    background-image: url('../index_B_img/combo-page-img/banner.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#middle-all-section-bg {
+    width: 100%;
+    margin-top: -9vw;
+    position: relative;
+}
+
+#middle-con {
+    width: 27.1vw;
+    position: absolute;
+    right: 6.51vw;
+    top: 5vw;
+}
+
+#middle-con-bg {
+    position: relative;
+    margin-bottom: 1.56vw;
+    width: 100%;
+    display: block;
+}
+
+#middle-con-bg>span {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.38vw;
+    color: white;
+    transition: 0.3s;
+    letter-spacing: 0.52vw;
+    text-align: center;
+    line-height: 80px;
+    margin-left: 7.5px;
+    margin-top: -5px;
+}
+
+
+#middle-con-bg>span:nth-child(3) {
+    display: none;
+}
+
+#middle-con>span {
+    font-size: 1.46vw;
+    color: #59534D;
+    line-height: 2.09vw;
+}
+
+#middle-con-bg:hover span:nth-child(2) {
+    display: none;
+}
+
+#middle-con-bg:hover span:nth-child(3) {
+    display: block;
+}
+
+
+
+
+/* 中間固定區塊 */
+#middle-section {
+    width: 100%;
+    padding: 0 10.875vw;
+}
+
+.middle-section-container {
+    width: 100%;
+    margin-top: -9vh;
+
+}
+
+#card-content {
+    display: flex;
+    margin: auto;
+    padding-top: 2vh;
+    margin-bottom: 4.3vh;
+    width: 100%;
+
+}
+
+.white-icon {
+    width: 100%;
+    height: 4vh;
+    background-image: url('./index_B_img/combo-page-img/full_bg-05-05.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 8.3vh;
+}
+
+.card-content-left {
+    width: 13.8vw;
+}
+
+.left-top {
+    margin-bottom: 2vh;
+
+}
+
+.left-top>img {
+    width: 100%;
+    box-shadow: 3px 3px 12px gray;
+}
+
+.left-bottom>img {
+    width: 100%;
+    box-shadow: 3px 3px 12px gray;
+}
+
+.card-content-middle {
+    width: 21.15vw;
+    margin-left: 1.6vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+
+}
+
+.middle-img {
+    width: 100%;
+}
+
+
+.middle-text {
+    width: 19vw;
+
+}
+
+.middle-text>h1 {
+    margin: 2px 0;
+}
+
+.middle-text>p {
+    font-size: 18px;
+
+}
+
+.middle-text>p:nth-child(5) {
+    color: red;
+}
+
+
+.line-bottom {
+    width: 100%;
+    margin: 3px 0;
+    border-bottom: solid black 1px;
+    border-top: solid #0000 1px;
+}
+
+.card-content-right {
+    margin-left: 2vw;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    background-image: url('./index_B_img/combo-page-img/two-icon-08-08.svg');
+}
+
+.right-text {
+    width: 1px;
+    font-size: 1.3vw;
+    margin-top: 5vh;
+    margin-right: 1vw;
+    display: flex;
+    flex-direction: row-reverse;
+
+
+}
+
+.right-text>p {
+    margin: 0 4px;
+
+}
+
+
+.right-title {
+    width: 3.2vw;
+
+}
+
+.right-title>img {
+    width: 100%;
+}

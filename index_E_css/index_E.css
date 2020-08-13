@@ -1,0 +1,140 @@
+@font-face {
+    font-family: KozMinPro-Medium;
+    src: url('../KozMinPro-Medium_font/KozMinPro-Medium.otf');
+  }
+
+#middle-all-section {
+    width: calc(79.2% - 70px);
+    margin-left: 20.8%;
+    background-color: #FEEEE3;
+}
+
+#banner {
+    width: 100%;
+    height: 30vw;
+    background-image: url('../index_E_img/bookBanner.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#middle-all-section-bg {
+    width: 100%;
+    margin-top: -9vw;
+    position: relative;
+}
+
+#middle-con {
+    width: 27.1vw;
+    position: absolute;
+    right: 6.51vw;
+    top: 5vw;
+}
+
+#middle-con-bg {
+    position: relative;
+    margin-bottom: 1.56vw;
+    width: 100%;
+    display: block;
+}
+
+#middle-con-bg>span {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.38vw;
+    color: white;
+    transition: 0.3s;
+    letter-spacing: 0.52vw;
+    text-align: center;
+    line-height: 80px;
+    margin-left: 7.5px;
+    margin-top: -5px;
+}
+
+
+#middle-con-bg>span:nth-child(3) {
+    display: none;
+}
+
+#middle-con>span {
+    font-size: 1.46vw;
+    color: #59534D;
+    line-height: 2.09vw;
+}
+
+#middle-con-bg:hover span:nth-child(2) {
+    display: none;
+}
+
+#middle-con-bg:hover span:nth-child(3) {
+    display: block;
+}
+
+
+/* 中間固定區塊 */
+
+/* 變動內容區塊 */
+
+#middle-section {
+    width: 100%;
+    padding: 0 8.3333333vw;
+    margin-top: 4vw;
+    /* 開始寫內容就拿掉 */
+    /* height: 100px; */
+    /* background-color: #FEEEE3; */
+    /* background-color: indianred; */
+}
+
+.middle-section-container {
+    width: 100%;
+    /* margin-top: -9vh; */
+
+}
+
+/* 變動內容區塊 */
+
+.con-top-line{
+width: 100%;
+height: 1.38vh;
+background-image: url('../index_E_img/line_bg-03.svg');
+background-size: cover;
+background-repeat: no-repeat;
+margin-bottom: 50px;
+
+}
+
+.con-top-buttom{
+width: 100%;
+height: 14.4vh;
+background-image: url('../index_E_img/line_bg-04.svg'); 
+background-size: cover;    
+background-repeat: no-repeat;
+background-position: top;
+margin-bottom: 50px;
+
+}
+
+#book-bg {
+    /* width: calc( 710px * 1.1 );
+    height: calc( 845px * 1.1 ); */
+
+    width: 50vw;
+    
+    background-image: url('../index_E_img/e01-2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+#booking-text {
+    width: 100%;
+    /* padding: 100px 3.1vw 0 3.1vw; */
+}
+
+#form-btn{
+    margin-bottom: 50px;
+}

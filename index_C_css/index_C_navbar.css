@@ -1,0 +1,219 @@
+@font-face {
+    font-family: KozMinPro-Medium;
+    src: url('../KozMinPro-Medium_font/KozMinPro-Medium.otf');
+  }
+
+#navbar {
+    width: 35vw;
+    height: 100%;
+    position: fixed;
+    right: calc(-35vw + 70px);
+    top: 0;
+    z-index: 10;
+    background-image: url('../index_C_img/n01-01.svg');
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position: top;
+    transition-duration: 0.5s;
+}
+#backtogo{
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    overflow: hidden;
+    width: 25px;
+    opacity: 1;
+    transition: 0.5s;
+}
+#backtogo:hover{
+    opacity: 0.3;
+}
+#backtogo:hover a{
+    font-size: unset;
+}
+#backtogo>img>a{
+    display: block;
+}
+
+#backtogo>img{
+    width: 100%;
+}
+#burger {
+    width: 40px;
+    height: 40px;
+    margin: 10;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+#navbar_container {
+    width: 540px;
+    height: 100vh;
+    background-color: rgb(110, 110, 46);
+    margin: auto;
+}
+
+#navbar.active {
+    right: 0px;
+}
+
+#menu_container {
+    position: absolute;
+    top: 170px;
+    left: 13%;
+    /* transform: translate(calc(-50% + 5px),-50%); */
+    opacity: 0;
+    transition-duration: 0.8s;
+    width: 82%;
+    padding: 10px;
+    height: 10vw;
+    min-height: 25vw;
+    max-height: 28vw;
+}
+
+#menu_container>div {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#menu_container>div>img {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#divul {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#navbar_logo {
+    width: 360px;
+    height: 40px;
+    position: absolute;
+    left: 15%;
+    top: 110px;
+    background-image: url('../index_C_img/n01-02.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#menu_container div ul {
+    list-style-type: none;
+    writing-mode: vertical-lr;
+    margin: 0;
+    width: 80%;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#menu_container div ul li {
+    font-size: 23px;
+    font-family: 'KozMinPro-Medium';
+}
+
+#menu_icon {
+    width: 245px;
+    height: 25px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+#follow_us {
+    width: 100px;
+    height: 100%;
+    font-size: 20px;
+    font-family: 'Lucida Bright';
+    border-right: 1px solid black;
+}
+
+#nav_icon {
+    width: 145px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#nav_icon>img {
+    width: 25px;
+    margin-left: 5px;
+}
+
+#nav_allfont {
+    position: absolute;
+    bottom: 60px;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav_allfont span:nth-child(1) {
+    font-size: 23px;
+    font-family: 'KozMinPro-Medium';
+}
+
+#nav_allfont span:nth-child(2) {
+    font-size: 20px;
+    font-family: 'Lucida Bright';
+    margin-bottom: 25px;
+}
+
+#nav_allfont span:nth-child(2)::after {
+    content: '（country code+81）';
+    font-size: 13px;
+    font-family: 'Lucida Bright';
+    margin-bottom: 25px;
+}
+
+#nav_allfont span:nth-child(3),
+#nav_allfont span:nth-child(4),
+#nav_allfont span:nth-child(5) {
+    font-size: 15px;
+    font-family: 'KozMinPro-Medium';
+}
+
+a:link {
+    /* 設定還沒有瀏覽過的連結 */
+    text-decoration: none;
+    color: unset;
+}
+
+a:visited {
+    /* 設定已經瀏覽過的連結 */
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    /* 設定滑鼠移經的連結 */
+    text-decoration: none;
+    color: brown;
+    font-size: 25px;
+}
+
+a:active {
+    /* 設定正在點選的連結 */
+    text-decoration: none;
+    color: unset;
+}
