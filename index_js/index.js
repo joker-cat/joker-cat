@@ -1,7 +1,7 @@
 window.onload = function() { 
     $(".load").css('display','none');
     $("#my_section").css('display','block');
-    // $('source').play();
+    swiper();
     var a = document.body.offsetWidth; //網頁顯示範圍不含滾軸
     var b = window.innerWidth; //瀏覽器範圍含滾軸
         b = b-17;
@@ -9,10 +9,10 @@ window.onload = function() {
             var c = (b - a) / 2;
             $('#navbar').css('right', c);
         }
-        $(document).snowfall({ image: "./index_img/sakura/1.png", flakeCount: 20, minSpeed: 1, minSize: 8, maxSize: 15, });
-        $(document).snowfall({ image: "./index_img/sakura/1.png", flakeCount: 20, minSpeed: 1, minSize: 8, maxSize: 15, });
-        $(document).snowfall({ image: "./index_img/sakura/2.png", flakeCount: 20, minSpeed: 1, minSize: 8, maxSize: 15, });
-        $(document).snowfall({ image: "./index_img/sakura/4.png", flakeCount: 20, minSpeed: 1, minSize: 8, maxSize: 15, });
+        $(document).snowfall({ image: "./index_img/sakura/1.png", flakeCount: 20, minSpeed: 1,maxSpeed: 1.5, minSize: 8, maxSize: 15, });
+        $(document).snowfall({ image: "./index_img/sakura/1.png", flakeCount: 20, minSpeed: 1,maxSpeed: 1.5, minSize: 8, maxSize: 15, });
+        $(document).snowfall({ image: "./index_img/sakura/2.png", flakeCount: 20, minSpeed: 1,maxSpeed: 1.5, minSize: 8, maxSize: 15, });
+        $(document).snowfall({ image: "./index_img/sakura/4.png", flakeCount: 20, minSpeed: 1,maxSpeed: 1.5, minSize: 8, maxSize: 15, });
   };
 
 jQuery(document).ready(function ($) {
@@ -91,10 +91,8 @@ jQuery(document).ready(function ($) {
 
 
     $('#burger').click(function () {
-        var a = document.body.offsetWidth;
+        var a = window.innerWidth;
         var b = window.innerHeight; //抓取網頁可見高度
-        
-        //a = a + 17;  //包含右方滾軸17px
 
         if (a > 920) {
             $('#navbar').toggleClass('active');
@@ -134,11 +132,6 @@ jQuery(document).ready(function ($) {
     });
 });
 
-$(document).ready(function () {
-
-});
-
-
 $('#backtogo').click(function () {
     $(window).scrollTop(0);
 })
@@ -148,7 +141,6 @@ jQuery(document).ready(function () {
     $(window).resize(function (e) {
         var b = window.innerHeight; //抓取網頁可見高度
         var a = window.innerWidth;   //含滾軸
-          //包含右方滾軸17px
 
         console.log("a:"+a);
         // console.log("b:"+b);
