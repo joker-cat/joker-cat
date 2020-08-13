@@ -1,8 +1,4 @@
-$(document).ready(function() {
-    $(".load").load();
-  });
-
-window.onload = function(){
+window.onload = function() { 
     $(".load").css('display','none');
     $("#my_section").css('display','block');
     swiper();
@@ -19,9 +15,138 @@ window.onload = function(){
         $(document).snowfall({ image: "./index_img/sakura/4.png", flakeCount: 20, minSpeed: 1,maxSpeed: 1.5, minSize: 8, maxSize: 15, });
   };
 
+jQuery(document).ready(function ($) {
+    $('.slider1').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        draggable: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: [$('.slider2'), $('.slider3'), $('.slider4')],
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        pauseOnHover: false,
+        touchMove:false,
+    });
+    $('.slider2').slick({
+        dots: false,
+        infinite: true,
+        draggable: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        arrows: false,
+        pauseOnHover: false,
+        touchMove:false,
+    });
+
+    $('.slider3').slick({
+        dots: false,
+        infinite: true,
+        draggable: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        arrows: false,
+        pauseOnHover: false,
+        touchMove:false,
+    });
+
+    $('.slider4').slick({
+        dots: false,
+        infinite: true,
+        draggable: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        arrows: false,
+        pauseOnHover: false,
+        touchMove:false,
+    });
+    $('#buttonn').click(function () {
+
+        $('.slider1').slick('slickNext');
+        $('.slider2').slick('slickNext');
+        $('.slider3').slick('slickNext');
+        $('.slider4').slick('slickNext');
+    });
+    $('#buttonp').click(function () {
+
+        $('.slider1').slick('slickPrev');
+        $('.slider2').slick('slickPrev');
+        $('.slider3').slick('slickPrev');
+        $('.slider4').slick('slickPrev');
+    });
+    $('#buttonn_920').click(function () {
+        $('.slider1').slick('slickNext');
+    });
+    $('#buttonp_920').click(function () {
+        $('.slider1').slick('slickPrev');
+    });
+
+
+
+    $('#burger').click(function () {
+        var a = window.innerWidth;
+        var b = window.innerHeight; //抓取網頁可見高度
+
+        if (a > 920) {
+            $('#navbar').toggleClass('active');
+        } else {
+            $('#navbar').toggleClass('active_920');
+        }
+
+        if(a <= 920){
+            $('#divul').css('transform', 'translateY(0)');
+        }
+
+        if ($('#burger>img').attr('src') == './index_img/burger.svg') {
+            $('#burger>img').attr('src', './index_img/櫻花-10.png');
+            $('#burger_cover').css('display','none');
+            $('#menu_container').css('opacity', '1');
+            $('#navbar_logo').css('opacity', '1');
+            $('#nav_allfont').css('opacity', '1');
+            $('#backtogo').css('display', 'none');
+
+        } else {
+            $('#burger>img').attr('src', './index_img/burger.svg');
+            $('#burger_cover').css('display','block');
+            $('#menu_container').css('opacity', '0');
+            $('#navbar_logo').css('opacity', '0');
+            $('#nav_allfont').css('opacity', '0');
+            $('#backtogo').css('display', 'block');
+            if (a <= 920) {
+                $('#backtogo').css('display', 'none');
+            }
+        }
+
+
+    // 判斷手機方向：
+    //     window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
+    //         // if (window.orientation === 180 || window.orientation === 0) {
+                
+    //         // }
+    //         if (window.orientation === 90 || window.orientation === -90 ){
+    //             console.log(123);
+    //             $('#nav_allfont').css('opacity','0');
+    //         }
+    //      }, false);
+    });
+});
+
 $('#backtogo').click(function () {
     $(window).scrollTop(0);
 })
+
+jQuery(document).ready(function () {
 
     $(window).resize(function (e) {
         var b = window.innerHeight; //抓取網頁可見高度
@@ -82,130 +207,4 @@ $('#backtogo').click(function () {
 
         }
     }
-
-// 
-
-$('.slider1').slick({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    draggable: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    asNavFor: [$('.slider2'), $('.slider3'), $('.slider4')],
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-    pauseOnHover: false,
-    touchMove: false,
-});
-$('.slider2').slick({
-    dots: false,
-    infinite: true,
-    draggable: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    arrows: false,
-    pauseOnHover: false,
-    touchMove: false,
-});
-
-$('.slider3').slick({
-    dots: false,
-    infinite: true,
-    draggable: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    arrows: false,
-    pauseOnHover: false,
-    touchMove: false,
-});
-
-$('.slider4').slick({
-    dots: false,
-    infinite: true,
-    draggable: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    arrows: false,
-    pauseOnHover: false,
-    touchMove: false,
-});
-$('#buttonn').click(function () {
-
-    $('.slider1').slick('slickNext');
-    $('.slider2').slick('slickNext');
-    $('.slider3').slick('slickNext');
-    $('.slider4').slick('slickNext');
-});
-$('#buttonp').click(function () {
-
-    $('.slider1').slick('slickPrev');
-    $('.slider2').slick('slickPrev');
-    $('.slider3').slick('slickPrev');
-    $('.slider4').slick('slickPrev');
-});
-$('#buttonn_920').click(function () {
-    $('.slider1').slick('slickNext');
-});
-$('#buttonp_920').click(function () {
-    $('.slider1').slick('slickPrev');
-});
-
-
-
-$('#burger').click(function () {
-    var a = window.innerWidth;
-    var b = window.innerHeight; //抓取網頁可見高度
-
-    if (a > 920) {
-        $('#navbar').toggleClass('active');
-    } else {
-        $('#navbar').toggleClass('active_920');
-    }
-
-    if(a <= 920){
-        $('#divul').css('transform', 'translateY(0)');
-    }
-
-    if ($('#burger>img').attr('src') == './index_img/burger.svg') {
-        $('#burger>img').attr('src', './index_img/櫻花-10.png');
-        $('#burger_cover').css('display','none');
-        $('#menu_container').css('opacity', '1');
-        $('#navbar_logo').css('opacity', '1');
-        $('#nav_allfont').css('opacity', '1');
-        $('#backtogo').css('display', 'none');
-
-    } else {
-        $('#burger>img').attr('src', './index_img/burger.svg');
-        $('#burger_cover').css('display','block');
-        $('#menu_container').css('opacity', '0');
-        $('#navbar_logo').css('opacity', '0');
-        $('#nav_allfont').css('opacity', '0');
-        $('#backtogo').css('display', 'block');
-        if (a <= 920) {
-            $('#backtogo').css('display', 'none');
-        }
-    }
-
-
-// 判斷手機方向：
-//     window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
-//         // if (window.orientation === 180 || window.orientation === 0) {
-            
-//         // }
-//         if (window.orientation === 90 || window.orientation === -90 ){
-//             console.log(123);
-//             $('#nav_allfont').css('opacity','0');
-//         }
-//      }, false);
-});
+}); 
