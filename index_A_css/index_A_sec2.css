@@ -10,7 +10,7 @@
 }
 
 #M_sec2_left {
-    width: 40%;
+    width: 45%;
 }
 
 #M_sec2_left>img {
@@ -22,10 +22,13 @@
     font-family: 'Microsoft JhengHei';
     color: #6E564A;
 }
-
+#M_sec2_rightcover{
+    width: 55%;
+    display: flex;
+}
 #M_sec2_center {
-    width: 40%;
-    padding: 0 60px;
+    width: 65%;
+    padding: 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,10 +39,13 @@
     font-family: 'Microsoft JhengHei';
     margin-bottom: 45px;
     color: #6E564A;
+    overflow: hidden;
+    position: relative;
 }
 
 #M_sec2_center_font1::after {
-    content: '______';
+    position: absolute;
+    content: '_____________________________________';
 }
 
 #M_sec2_center_font2 {
@@ -49,7 +55,7 @@
 }
 
 #M_sec2_right {
-    width: 20%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -61,7 +67,7 @@
 
 #M_sec2_right_top,
 #M_sec2_right_bottom {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -75,4 +81,52 @@
     font-family: 'Microsoft JhengHei';
     color: #6E564A;
     margin-bottom: 10px;
+}
+@media(max-width:1420px){
+    #Middle_section2_container {
+        padding: 60px 8.333333333vw;
+    }
+    #M_sec2_left {
+        width: 55%;
+    }
+    #M_sec2_rightcover{
+        width: 45%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    #M_sec2_center {
+        width: 100%;
+        padding: 0 20px;
+    }
+    #M_sec2_left {
+        width: 55%;
+    }
+    #M_sec2_right {
+        width: 100%;
+        padding: 0 20px;
+        flex-direction: unset;
+        justify-content: space-between;
+        margin-bottom: 3vw;
+    }
+    .M_sec2_right_font1 {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    #M_sec2_right_top,
+    #M_sec2_right_bottom {
+        width: 45%;
+        margin: 0 auto;
+    }
+    #M_sec2_right_top{
+        order: 1;
+    }
+    #M_sec2_center_font1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    #M_sec2_center_font2 {
+        font-size: 1.2vw;
+    }
 }

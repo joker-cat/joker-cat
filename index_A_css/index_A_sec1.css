@@ -5,7 +5,7 @@
 
 #Middle_section1 {
     width: 100%;
-    padding: 0 8.333333333vw;
+    padding: 0 8.333333333vw 50px 8.333333333vw;
     background-color: #6F4F55;
     margin-top: -6vw;
 }
@@ -13,7 +13,6 @@
 #Middle_section1_container {
     display: flex;
     width: 100%;
-    height: 46.35vw;
 }
 
 #M_sec1_left {
@@ -27,12 +26,14 @@
 
 #M_sec1_right {
     width: 50%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     position: relative;
 }
-
+#M_sec1_right_img>img{
+    display: none;
+}
 #M_sec1_right_fontvon {
     height: 100%;
     position: absolute;
@@ -71,11 +72,60 @@
     font-size: 15px;
     font-family: 'Microsoft JhengHei';
     position: absolute;
-    bottom: 115px;
+    bottom: 50px;
 }
 
 .M_sec1_right_font2::before {
     position: absolute;
     content: '———';
     left: -5px;
+}
+@media(max-width:1420px){
+    #M_sec1_left {
+        width: 45%;
+    }
+    
+    #M_sec1_right {
+        width: 55%;
+        height: auto;
+    }
+
+    #M_sec1_right_img>img{
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 5.5vw;
+        display: block;
+    }
+    #M_sec1_right_fontvon {
+        height: auto;
+        position: static;
+        top: 0;
+    }
+    .M_sec1_right_font1, .M_sec1_right_font2 {
+        padding: 0 0 0 20px;
+    }
+    .M_sec1_right_font1:nth-child(1) {
+        font-size: 2.1vw;
+        margin-bottom: 1vw;
+    }
+    
+    .M_sec1_right_font1:nth-child(2) {
+        font-size: 1vw;
+        font-family: 'Microsoft JhengHei';
+        margin-bottom: 0.781vw;
+    }
+    
+    .M_sec1_right_font1:nth-child(3) {
+        font-size: 1vw;
+        font-family: 'Microsoft JhengHei';
+        margin-bottom: 0;
+    }
+    .M_sec1_right_font2 {
+        bottom: 35px;
+    }
+    .M_sec1_right_font2::before {
+        content: '____';
+        left: -15px;
+    }
 }
