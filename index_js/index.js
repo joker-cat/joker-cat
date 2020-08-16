@@ -116,6 +116,9 @@ jQuery(document).ready(function ($) {
             $('#navbar_logo').css('opacity', '1');
             $('#nav_allfont').css('opacity', '1');
             $('#backtogo').css('display', 'none');
+            if(a <= 920){
+                $('#divul').css('transform', 'translateY(0)');
+            }
 
         } else {
             $('#burger>img').attr('src', './index_img/burger.svg');
@@ -126,6 +129,9 @@ jQuery(document).ready(function ($) {
             $('#backtogo').css('display', 'block');
             if (a <= 920) {
                 $('#backtogo').css('display', 'none');
+            }
+            if(a <= 920){
+                $('#divul').css('transform', 'translateY(-50%)');
             }
         }
 

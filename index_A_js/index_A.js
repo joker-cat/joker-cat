@@ -42,6 +42,9 @@ $('#burger').click(function () {
         if (a <= 920) {
             $('#backtogo').css('display', 'none');
         }
+        if(a <= 920){
+            $('#divul').css('transform', 'translateY(-50%)');
+        }
     }
 });
 

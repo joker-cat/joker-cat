@@ -68,3 +68,10 @@
     color: #698D76;
     line-height: 2.09vw;
 }
+@media(max-width:920px){
+    #Middle_allsection {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 70px;
+    }
+}

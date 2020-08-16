@@ -5,7 +5,6 @@
 #left {
     width: 20.8%;
     height: 100vh;
-    /* background-color: blue; */
     position: fixed;
 }
 
@@ -66,4 +65,9 @@
 
 .bookingicon-box:hover {
     opacity: 0.5;
+}
+@media(max-width:920px){
+    #left {
+        display: none;
+    }
 }
