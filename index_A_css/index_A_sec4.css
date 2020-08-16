@@ -28,7 +28,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
     align-self: center;
 }
 
@@ -72,7 +71,6 @@
 #M_sec4_right {
     width: 50%;
     height: 100%;
-    /* background-color: bisque; */
     position: relative;
 }
 
@@ -86,5 +84,24 @@
     width: 100%;
     height: auto;
 }
-
-/* relative 有體積定位相同點時不會重疊 */
+@media(max-width:1420px){
+    #Middle_section4_container {
+        padding: 50px 8.333333333vw;
+    }
+    #M_sec4_left {
+        padding: 0;
+    }
+    .M_sec4_left_font1 {
+        font-size: 22px;
+    }
+    .M_sec4_left_font2:nth-child(3) {
+        font-size: 1vw;
+        margin-bottom: 1vw;
+    }
+    .M_sec4_left_font2:nth-child(4) {
+        font-size: 1vw;
+    }
+    #sec4imgcover {
+        width: 100%;
+    }
+}

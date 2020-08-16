@@ -3,9 +3,9 @@
     src: url('../KozMinPro-Medium_font/KozMinPro-Medium.otf');
   }
 #footer{
-    width: calc(100% - 70px);
+    width: 100%;
     background-color: #487557;
-    padding: 110px 0 55px 0;
+    padding:50px 0 55px 0;
 }
 #container_footer{
     width: 100%;
@@ -42,7 +42,8 @@
 #container_footerright{
     width: 320px;
     border-left: 1px solid white;
-    padding-left: 90px;
+    padding-left: 7vw;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
 }
@@ -70,7 +71,7 @@ span.footer_font2{
 }
 @media(max-width:1420px){
     #container_footer{
-        max-width: 900px;
+        max-width: 90%;
     }
     #container_footerright>a{
         font-size: 15px;
