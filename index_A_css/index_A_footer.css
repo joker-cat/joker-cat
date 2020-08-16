@@ -12,7 +12,7 @@
     max-width: 1000px;
     height: 100%;
     margin: auto;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 }
 #container_logo{
     width: 360px;
@@ -54,7 +54,7 @@ span.footer_font1{
 }
 
 span.footer_font2{
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'KozMinPro-Medium';
     color: #FFFFFF;
 }
@@ -98,7 +98,7 @@ span.footer_font2{
         display: flex;
         flex-direction: column;
         text-align: left;
-        padding-right: 20px;
+        padding-right: 0px;
     }
     #container_footerright{
         width: 45%;
