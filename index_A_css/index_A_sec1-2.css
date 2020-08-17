@@ -116,7 +116,11 @@
         margin-top: 70px;
     }
     .M_sec1-2_fontset {
+<<<<<<< HEAD
         font-size: 1vw;
+=======
+        font-size: 1.2vw;
+>>>>>>> 4d62acca6124e718a05af9f7e775e41583068b93
     }
 }
 @media(max-width:920px){

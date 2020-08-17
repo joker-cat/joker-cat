@@ -126,7 +126,11 @@
         width: 56%;
     }
 }
+<<<<<<< HEAD
 @media(max-width:920px){
+=======
+@media(max-width:1420px){
+>>>>>>> 4d62acca6124e718a05af9f7e775e41583068b93
     #Middle_section1-3_1420{
         display: none;
     }

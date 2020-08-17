@@ -180,7 +180,11 @@
         flex-direction: column;
     }
     .M_sec1-1_fontset {
+<<<<<<< HEAD
         font-size: 2vw;
+=======
+        font-size: 1.8vw;
+>>>>>>> 4d62acca6124e718a05af9f7e775e41583068b93
         margin-bottom: 15px;
     }
     #M_sec1-1_LT {
