@@ -104,13 +104,13 @@ jQuery(document).ready(function ($) {
         } else {
             $('#navbar').toggleClass('active_920');
         }
-
+    
         if(a <= 920){
             $('#divul').css('transform', 'translateY(0)');
         }
-
-        if ($('#burger>img').attr('src') == './index_img/burger.svg') {
-            $('#burger>img').attr('src', './index_img/櫻花-10.png');
+    
+        if ($('#burger>img').attr('src') == './index_A_img/burger.svg') {
+            $('#burger>img').attr('src', './index_A_img/櫻花-10.png');
             $('#burger_cover').css('display','none');
             $('#menu_container').css('opacity', '1');
             $('#navbar_logo').css('opacity', '1');
@@ -119,9 +119,9 @@ jQuery(document).ready(function ($) {
             if(a <= 920){
                 $('#divul').css('transform', 'translateY(0)');
             }
-
+    
         } else {
-            $('#burger>img').attr('src', './index_img/burger.svg');
+            $('#burger>img').attr('src', './index_A_img/burger.svg');
             $('#burger_cover').css('display','block');
             $('#menu_container').css('opacity', '0');
             $('#navbar_logo').css('opacity', '0');
@@ -170,8 +170,6 @@ jQuery(document).ready(function () {
         }
         if(a>920){
             $('#divul').css('transform', 'translateX(-50%)');
-        }else{
-            $('#divul').css('transform', 'translateX(0)');
         }
         if(a > 920 && $('#navbar').hasClass('active')){
             $('#backtogo').css('display', 'none');
@@ -198,8 +196,9 @@ jQuery(document).ready(function () {
             $('#navbar').addClass('active_920');
             $('#backtogo').css('display', 'none');
             $('#nav_allfont').css('opacity','1');
+            $('#divul').css('transform', 'translate(0,0)');
         }
-
+    
         resize();
     });
 

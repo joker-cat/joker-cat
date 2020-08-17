@@ -85,8 +85,6 @@ $(window).resize(function (e) {
     }
     if(a>920){
         $('#divul').css('transform', 'translateX(-50%)');
-    }else{
-        $('#divul').css('transform', 'translateX(0)');
     }
     if(a > 920 && $('#navbar').hasClass('active')){
         $('#backtogo').css('display', 'none');
@@ -113,6 +111,7 @@ $(window).resize(function (e) {
         $('#navbar').addClass('active_920');
         $('#backtogo').css('display', 'none');
         $('#nav_allfont').css('opacity','1');
+        $('#divul').css('transform', 'translate(0,0)');
     }
 
     resize();

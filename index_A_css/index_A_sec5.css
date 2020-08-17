@@ -109,3 +109,26 @@
         margin-left: auto;
     }
 }
+@media(max-width:920px){
+    #Middle_section5_container {
+        width: 70%;
+        padding: 70px 0;
+        margin: auto;
+    }
+    #M_sec5_left_font {
+        width: 70%;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .M_sec5_left_font1 {
+        margin-bottom: 0px;
+    }
+    .M_sec5_left_font2 {
+        font-size: 2vw;
+    }
+    #M_sec5_right_swiper {
+        width: 100%;
+        margin-top: 150px;
+    }
+}

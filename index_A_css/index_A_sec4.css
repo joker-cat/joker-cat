@@ -105,3 +105,32 @@
         width: 100%;
     }
 }
+@media(max-width:920px){
+    #Middle_section4_container {
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    #M_sec4_left {
+        width: 100%;
+    }
+    #M_sec4_right {
+        margin-top: -50px;
+        width: 100%;
+        height: unset;
+        position: static;
+    }
+    .M_sec4_left_font1:nth-child(1) {
+        align-self: center;
+    }
+    .M_sec4_left_font1:nth-child(2) {
+        align-self: center;
+    }
+    .M_sec4_left_font2:nth-child(3) {
+        font-size: 2vw;
+    }
+    .M_sec4_left_font2:nth-child(4) {
+        font-size: 2vw;
+    }
+
+}
