@@ -132,11 +132,7 @@
     }
 
     #M_sec2_center_font2 {
-<<<<<<< HEAD
         font-size: 1vw;
-=======
-        font-size: 2vw;
->>>>>>> 4d62acca6124e718a05af9f7e775e41583068b93
     }
 }
 @media(max-width:920px){
@@ -157,10 +153,7 @@
         padding: 0;
         margin-bottom: 25px;
     }
-<<<<<<< HEAD
     
-=======
->>>>>>> 4d62acca6124e718a05af9f7e775e41583068b93
     #M_sec2_left {
         width: 100%;
         margin-bottom: 20px;
@@ -193,10 +186,7 @@
         height: 100%;
         margin-bottom: 0;
     }
-<<<<<<< HEAD
     
-=======
->>>>>>> 4d62acca6124e718a05af9f7e775e41583068b93
     .M_sec2_imgcon>img {
         width: unset;
         height: 100%;
@@ -204,10 +194,7 @@
     .M_sec2_right_font1 {
         font-size: 15px;
     }
-<<<<<<< HEAD
     #M_sec2_center_font2 {
         font-size: 2vw;
     }
-=======
->>>>>>> 4d62acca6124e718a05af9f7e775e41583068b93
 }

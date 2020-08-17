@@ -7,14 +7,11 @@
     background-color: #EDEECC;
     display: none;
 }
-<<<<<<< HEAD
 #Middle_section3_920{
     width: 100%;
     background-color: #EDEECC;
     display: none;
 }
-=======
->>>>>>> 4d62acca6124e718a05af9f7e775e41583068b93
 
 #Middle_section3_container {
     width: 100%;
@@ -160,7 +157,6 @@
         font-size: 1vw;
         margin-bottom: 15px;
     }
-<<<<<<< HEAD
 }
 @media(max-width:920px){
     #Middle_section3_1420{
@@ -211,6 +207,4 @@
     .M_sec3_right_font2 {
         font-size: 2vw;
     }
-=======
->>>>>>> 4d62acca6124e718a05af9f7e775e41583068b93
 }
