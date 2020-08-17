@@ -109,8 +109,8 @@ jQuery(document).ready(function ($) {
             $('#divul').css('transform', 'translateY(0)');
         }
     
-        if ($('#burger>img').attr('src') == './index_A_img/burger.svg') {
-            $('#burger>img').attr('src', './index_A_img/櫻花-10.png');
+        if ($('#burger>img').attr('src') == './index_img/burger.svg') {
+            $('#burger>img').attr('src', './index_img/櫻花-10.png');
             $('#burger_cover').css('display','none');
             $('#menu_container').css('opacity', '1');
             $('#navbar_logo').css('opacity', '1');
@@ -121,7 +121,7 @@ jQuery(document).ready(function ($) {
             }
     
         } else {
-            $('#burger>img').attr('src', './index_A_img/burger.svg');
+            $('#burger>img').attr('src', './index_img/burger.svg');
             $('#burger_cover').css('display','block');
             $('#menu_container').css('opacity', '0');
             $('#navbar_logo').css('opacity', '0');
