@@ -31,6 +31,9 @@ $('#burger').click(function () {
         $('#navbar_logo').css('opacity', '1');
         $('#nav_allfont').css('opacity', '1');
         $('#backtogo').css('display', 'none');
+        if(a <= 920){
+            $('#divul').css('transform', 'translateY(0)');
+        }
 
     } else {
         $('#burger>img').attr('src', './index_A_img/burger.svg');
@@ -77,10 +80,13 @@ $(window).resize(function (e) {
     if(b <= 770 && $('#navbar').hasClass('active_920')){
         $('#nav_allfont').css('opacity','1');
     }
-    if(a <= 920){
-        $('#divul').css('transform', 'translateY(0)');
-    }else{
+    if(a <= 920 && $('#navbar').hasClass('')){
+        $('#divul').css('transform', 'translateY(20)');
+    }
+    if(a>920){
         $('#divul').css('transform', 'translateX(-50%)');
+    }else{
+        $('#divul').css('transform', 'translateX(0)');
     }
     if(a > 920 && $('#navbar').hasClass('active')){
         $('#backtogo').css('display', 'none');
