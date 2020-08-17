@@ -122,7 +122,7 @@
     top: 50px;
 }
 #container5_bg1{
-    width: 375px;
+    width: 370px;
     height: 690px;
     background-image: url('../index_img/section04/s04-05.svg');
     background-repeat: no-repeat;
@@ -185,7 +185,7 @@
         position: relative;
     }
     #container5_bg1{
-        width: 40.7vw;
+        width: 40vw;
         height: 75vw;
         top: -42.9vw;
     }

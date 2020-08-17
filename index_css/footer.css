@@ -75,9 +75,6 @@ span.footer_font2{
     #container_footerright>a{
         font-size: 15px;
     }
-    #container_footerright>a:hover .footer_font2{
-        color: rgb(200, 27, 27);
-    }
 }
 @media(max-width:920px){
     #footer{
@@ -111,9 +108,6 @@ span.footer_font2{
     #container_footerright>a{
         display: block;
         font-size: 15px;
-    }
-    #container_footerright>a:hover .footer_font2{
-        color: rgb(246, 35, 35);
     }
 }
 @media(max-width:420px){

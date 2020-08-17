@@ -9,6 +9,7 @@
     height: 100%;
     padding: 70px 8.3333333vw;
     display: flex;
+    position: relative;
 }
 
 #M_sec5_left_font {
@@ -16,7 +17,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: left;
 }
 
 .M_sec5_left_font1 {
@@ -28,7 +28,7 @@
 }
 
 .M_sec5_left_font2 {
-    font-size: 15px;
+    font-size: 1vw;
     font-family: 'Microsoft JhengHei';
     color: #636466;
 }
@@ -84,8 +84,28 @@
 
 .M_sec5_logofont_font>span {
     position: absolute;
-    top: 20%;
-    font-size: 15px;
+    top: 10%;
+    font-size: 1vw;
     font-family: 'Microsoft JhengHei';
     color: #636466;
+}
+@media(max-width:1420px){
+    #M_sec5_left_font {
+        width: 20%;
+        height: auto;
+        display: unset;
+        flex-direction: unset;
+        position: absolute;
+        top: 100px;
+        z-index: 2;
+    }
+    .M_sec5_left_font1 {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    #M_sec5_right_swiper {
+        width: 95%;
+        height: 100%;
+        margin-left: auto;
+    }
 }
