@@ -112,6 +112,7 @@
     }
     #M_sec1-3_top_font .Middle_section1-3_fontset:nth-child(2) {
         margin-bottom: 0px;
+        margin-top: 10px;
     }
     #M_sec1-3_top_font .Middle_section1-3_fontset:nth-child(3) {
         margin: 12px 0;
@@ -135,7 +136,7 @@
     }
     #Middle_section1-3_container {
         padding: 50px 8.333333333vw;
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
     #Middle_section1-3_title{
