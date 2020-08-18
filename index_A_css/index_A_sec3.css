@@ -7,6 +7,11 @@
     background-color: #EDEECC;
     display: none;
 }
+#Middle_section3_920{
+    width: 100%;
+    background-color: #EDEECC;
+    display: none;
+}
 
 #Middle_section3_container {
     width: 100%;
@@ -80,7 +85,7 @@
 }
 
 .M_sec3_right_font2 {
-    font-size: 15px;
+    font-size: 1vw;
     font-family: 'Microsoft JhengHei';
     color: #636466;
     margin-bottom: 15px;
@@ -151,5 +156,55 @@
     .M_sec3_right_font2 {
         font-size: 1vw;
         margin-bottom: 15px;
+    }
+}
+@media(max-width:920px){
+    #Middle_section3_1420{
+        display: none;
+    }
+    #Middle_section3_920{
+        display: block;
+    }
+    .M_sec3_right_font1 {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    #M_sec3_center_img {
+        width: 50%;
+        margin-right: 20px;
+    }
+    #M_sec3_left{
+        margin-bottom: 20px;
+    }
+    #M_sec3_right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    #M_sec3_righttop {
+        width: 100%;
+        margin-right: 0px;
+    }
+    #M_sec3_rightbottom {
+        width: 100%;
+        margin-top: 10px;
+    }
+    #M_sec3_top_rightcover {
+        width: 100%;
+        flex-direction: unset;
+        margin-top: 10px;
+    }
+    #M_sec3_righttop_imgcover {
+        width: 40%;
+        font-size: 1vw;
+    }
+    #M_sec3_rightbottom_imgcover {
+        width: 40%;
+        font-size: 1vw;
+    }
+    .M_sec3_right_font2 {
+        font-size: 2vw;
     }
 }

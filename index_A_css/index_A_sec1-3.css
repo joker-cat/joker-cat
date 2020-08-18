@@ -79,7 +79,7 @@
     margin-bottom: 45px;
 }
 .Middle_section1-3_fontset{
-    font-size: 15px;
+    font-size: 1vw;
     font-family: 'Microsoft JhengHei';
     color: #624939;
 }
@@ -112,6 +112,7 @@
     }
     #M_sec1-3_top_font .Middle_section1-3_fontset:nth-child(2) {
         margin-bottom: 0px;
+        margin-top: 10px;
     }
     #M_sec1-3_top_font .Middle_section1-3_fontset:nth-child(3) {
         margin: 12px 0;
@@ -126,7 +127,7 @@
         width: 56%;
     }
 }
-@media(max-width:1420px){
+@media(max-width:920px){
     #Middle_section1-3_1420{
         display: none;
     }
@@ -135,7 +136,7 @@
     }
     #Middle_section1-3_container {
         padding: 50px 8.333333333vw;
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
     #Middle_section1-3_title{

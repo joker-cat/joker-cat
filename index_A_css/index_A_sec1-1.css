@@ -54,6 +54,9 @@
 #Middle_sec1-1_R_title {
     font-size: 28px;
     margin-bottom: 30px;
+    color: #CC804D;
+    position: relative;
+    overflow: hidden;
 }
 
 #Middle_sec1-1_R_title span::after {
@@ -76,7 +79,7 @@
 }
 
 .M_sec1-1_fontset {
-    font-size: 15px;
+    font-size: 1vw;
     font-family: 'Microsoft JhengHei';
     color: #CC804D;
 }
@@ -177,7 +180,7 @@
         flex-direction: column;
     }
     .M_sec1-1_fontset {
-        font-size: 1.8vw;
+        font-size: 2vw;
         margin-bottom: 15px;
     }
     #M_sec1-1_LT {

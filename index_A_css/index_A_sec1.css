@@ -64,13 +64,13 @@
 }
 
 .M_sec1_right_font1:nth-child(2) {
-    font-size: 15px;
+    font-size: 1vw;
     font-family: 'Microsoft JhengHei';
     margin-bottom: 0.781vw;
 }
 
 .M_sec1_right_font1:nth-child(3) {
-    font-size: 15px;
+    font-size: 1vw;
     font-family: 'Microsoft JhengHei';
     margin-bottom: 3.125vw;
 }

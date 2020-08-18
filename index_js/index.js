@@ -104,11 +104,11 @@ jQuery(document).ready(function ($) {
         } else {
             $('#navbar').toggleClass('active_920');
         }
-
+    
         if(a <= 920){
             $('#divul').css('transform', 'translateY(0)');
         }
-
+    
         if ($('#burger>img').attr('src') == './index_img/burger.svg') {
             $('#burger>img').attr('src', './index_img/櫻花-10.png');
             $('#burger_cover').css('display','none');
@@ -119,7 +119,7 @@ jQuery(document).ready(function ($) {
             if(a <= 920){
                 $('#divul').css('transform', 'translateY(0)');
             }
-
+    
         } else {
             $('#burger>img').attr('src', './index_img/burger.svg');
             $('#burger_cover').css('display','block');
@@ -165,9 +165,10 @@ jQuery(document).ready(function () {
         if(b <= 770 && $('#navbar').hasClass('active_920')){
             $('#nav_allfont').css('opacity','1');
         }
-        if(a <= 920){
-            $('#divul').css('transform', 'translateY(0)');
-        }else{
+        if(a <= 920 && $('#navbar').hasClass('')){
+            $('#divul').css('transform', 'translateY(20)');
+        }
+        if(a>920){
             $('#divul').css('transform', 'translateX(-50%)');
         }
         if(a > 920 && $('#navbar').hasClass('active')){
@@ -195,8 +196,9 @@ jQuery(document).ready(function () {
             $('#navbar').addClass('active_920');
             $('#backtogo').css('display', 'none');
             $('#nav_allfont').css('opacity','1');
+            $('#divul').css('transform', 'translate(0,0)');
         }
-
+    
         resize();
     });
 

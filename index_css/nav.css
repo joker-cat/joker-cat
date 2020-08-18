@@ -288,7 +288,7 @@ a:link{
             position: relative;
             top: unset;
             left: unset;
-            transform: translate(0,-50%);
+            transform: translate(0,-100%);
             width: 100%;
             margin: auto;
             display: unset;

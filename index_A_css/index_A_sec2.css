@@ -54,7 +54,7 @@
 }
 
 #M_sec2_center_font2 {
-    font-size: 15px;
+    font-size: 1vw;
     font-family: 'Microsoft JhengHei';
     color: #6E564A;
 }
@@ -132,7 +132,7 @@
     }
 
     #M_sec2_center_font2 {
-        font-size: 2vw;
+        font-size: 1vw;
     }
 }
 @media(max-width:920px){
@@ -153,6 +153,7 @@
         padding: 0;
         margin-bottom: 25px;
     }
+    
     #M_sec2_left {
         width: 100%;
         margin-bottom: 20px;
@@ -185,11 +186,15 @@
         height: 100%;
         margin-bottom: 0;
     }
+    
     .M_sec2_imgcon>img {
         width: unset;
         height: 100%;
     }
     .M_sec2_right_font1 {
         font-size: 15px;
+    }
+    #M_sec2_center_font2 {
+        font-size: 2vw;
     }
 }
