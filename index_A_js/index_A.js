@@ -1,5 +1,4 @@
 window.onload = function() { 
-    swiper();
     var a = document.body.offsetWidth; //網頁顯示範圍不含滾軸
     var b = window.innerWidth; //瀏覽器範圍含滾軸
         b = b-17;
@@ -100,6 +99,7 @@ $(window).resize(function (e) {
     }
     if(a > 920 && $('#navbar').hasClass('')){
         $('#backtogo').css('display', 'block');
+        $('#divul').css('transform', 'translateY(-100%)');
     }
     if (a > 920 && $('#navbar').hasClass('active_920')) {
         $('#navbar').removeClass('active_920');

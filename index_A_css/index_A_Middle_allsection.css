@@ -3,8 +3,8 @@
     src: url('../KozMinPro-Medium_font/KozMinPro-Medium.otf');
   }
 #Middle_allsection {
-    width: calc(79.2% - 70px);
-    margin-left: 20.8%;
+    width: calc(80% - 70px);
+    margin-left: 20%;
     background-color: #6F4F55;
 }
 
@@ -73,5 +73,8 @@
         width: 100%;
         margin-left: 0;
         padding-top: 70px;
+    }
+    #banner {
+        height: 40vw;
     }
 }
