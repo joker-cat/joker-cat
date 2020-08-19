@@ -131,7 +131,7 @@ jQuery(document).ready(function ($) {
                 $('#backtogo').css('display', 'none');
             }
             if(a <= 920){
-                $('#divul').css('transform', 'translateY(-50%)');
+                $('#divul').css('transform', 'translateY(-100%)');
             }
         }
 

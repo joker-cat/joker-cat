@@ -111,7 +111,7 @@
 }
 @media(max-width:920px){
     #Middle_section5_container {
-        width: 70%;
+        width: 80%;
         padding: 70px 0;
         margin: auto;
     }
@@ -130,5 +130,36 @@
     #M_sec5_right_swiper {
         width: 100%;
         margin-top: 150px;
+    }
+    .M_sec5_left_font1 {
+        font-size: 6.6vw;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .M_sec5_imgcon {
+        width: 55%;
+    }
+    .M_sec5_logofont {
+        width: 45%;
+    }
+    .M_sec5_logofont_font>span {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 7;
+    }
+}
+@media(max-width:420px){
+    #Middle_section5_container {
+        width: 85%;
+    }
+    .M_sec5_imgcon {
+        width: 60%;
+    }
+    .M_sec5_logofont {
+        width: 40%;
+    }
+    .M_sec5_logofont_font>span {
+        -webkit-line-clamp: 5;
     }
 }

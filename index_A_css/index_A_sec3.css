@@ -208,3 +208,11 @@
         font-size: 2vw;
     }
 }
+@media(max-width:420px){
+    #M_sec3_rightbottom {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 6;
+    }
+}

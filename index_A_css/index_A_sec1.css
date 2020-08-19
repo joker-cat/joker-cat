@@ -167,9 +167,6 @@
         margin: auto;
     }
 
-
-
-
     #Middle_allsection_bg1 {
         margin-top: -12vw;
     }
@@ -188,6 +185,7 @@
     }
     .M_sec1_right_font1:nth-child(1) {
         font-size: 3.2vw;
+        padding: 0;
     }
     .M_sec1_right_font1:nth-child(1)::after {
         margin-left: 20px;
@@ -196,8 +194,24 @@
     }
     .M_sec1_right_font1:nth-child(2) {
         font-size: 2vw;
+        padding: 0;
     }
     .M_sec1_right_font1:nth-child(3) {
         font-size: 2vw;
+        padding: 0;
+    }
+}
+@media(max-width:420px){
+    #middle_con>span {
+         font-size: 12px;
+         overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 7;
+    }
+    #Middle_section1_920 {
+        width: 100%;
+        padding: 40px 8.333333333vw 50px 8.333333333vw;
+
     }
 }

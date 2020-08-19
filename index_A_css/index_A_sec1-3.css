@@ -157,3 +157,12 @@
         margin-bottom: 2.15vw;
     }
 }
+@media(max-width:420px){
+    #M_sec1-3_top_font .Middle_section1-3_fontset:nth-child(2) {
+         font-size: 12px;
+         overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+}
