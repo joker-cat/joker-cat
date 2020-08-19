@@ -62,7 +62,6 @@
     position: absolute;
     top: 170px;
     left: 13%;
-    /* transform: translate(calc(-50% + 5px),-50%); */
     opacity: 0;
     transition-duration: 0.8s;
     width: 82%;
