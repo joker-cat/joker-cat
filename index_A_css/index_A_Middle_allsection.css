@@ -78,3 +78,18 @@
         height: 40vw;
     }
 }
+@media(max-width:720px){
+    #Middle_allsection {
+        padding-top: 60px;
+    }
+}
+@media(max-width:520px){
+    #Middle_allsection {
+        padding-top: 50px;
+    }
+}
+@media(max-width:320px){
+    #Middle_allsection {
+        padding-top: 40px;
+    }
+}
