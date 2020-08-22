@@ -23,8 +23,8 @@ $('#burger').click(function () {
     if(a <= 920 && $('#navbar').hasClass('active_920')){
         $('#divul').css('transform', 'translateY(0%)');
     }
-    if(a <= 920 && $('#navbar').hasClass('')){
-        $('#divul').css('transform', 'translateY(-100%)');
+    if(a > 920 && $('#navbar').hasClass('active')){
+        $('#divul').css('transform', 'translateX(-50%)');
     }
     if ($('#burger>img').attr('src') == './index_D_img/burger.svg') {
         $('#burger>img').attr('src', './index_D_img/櫻花-10.png');
@@ -63,9 +63,9 @@ $('#backtogo').click(function () {
             $('#nav_allfont').css('opacity','1');
         }
         if(a <= 920 && $('#navbar').hasClass('')){
-            $('#divul').css('transform', 'translateY(20)');
+            $('#divul').css('transform', 'translateY(100%)');
         }
- 
+        
         if(a > 920 && $('#navbar').hasClass('active')){
             $('#backtogo').css('display', 'none');
         }
