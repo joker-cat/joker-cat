@@ -4,8 +4,8 @@
   }
 
 #middle-all-section {
-    width: calc(79.2% - 70px);
-    margin-left: 20.8%;
+    width: calc(80% - 70px);
+    margin-left: 20%;
     background-color: #FEEEE3;
 }
 
@@ -185,4 +185,85 @@ a:hover {
 .card-body {
     color: black;
     font-family: 'KozMinPro-Medium';
+}
+@media(max-width:1420px){
+    #middle-section {
+        padding: 0 8.33333vw;
+    }
+    .middle-section-container {
+        width: 100%;
+        margin-top: -5vh;
+    }
+    #middle-con-bg {
+        margin-bottom: 10px;
+    }
+    #middle-con>span {
+        font-size: 1.6vw;
+        line-height: 1.5;
+        margin-left: 0;
+    }
+    #middle-con-bg>span{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    #middle-con {
+        width: 28vw;
+        position: absolute;
+        right: 6.6vw;
+        top: 4vw;
+    }
+}
+@media(max-width:920px){
+    #middle-all-section {
+        width: 100%;
+        margin-left: 0;
+    }
+    #middle-section {
+        padding: 0 10%;
+    }
+    #middle-all-section-bg {
+        margin-top: -12vw;
+    }
+    #middle-con {
+        width: 35vw;
+        right: 7vw;
+        top: 7vw;
+    }
+    #middle-con>span {
+        display: block;
+        font-size: 1.6vw;
+        line-height: 1.4;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+    }
+    .middle-section-container {
+
+        margin-top: -3vh;
+    }
+    #qa-box {
+        justify-content: space-between;
+    }
+    .button {
+        margin: auto;
+    }
+    .title span {
+        font-size: 22px;
+    }
+    #part_1, #part_2, #part_3 {
+        margin-bottom: 50px;
+    }
+}
+@media(max-width:420px){
+    .middle-section-container {
+        margin-top: 0vh;
+    }
+    .title span {
+        font-size: 18px;
+    }
+    .btn{
+        font-size: 16px;
+    }
+    
 }

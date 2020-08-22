@@ -4,7 +4,7 @@
   }
 #left {
     width: 20%;
-    max-width: 384px; /* 1903*20.8% */
+    max-width: 384px; 
     height: 100vh;
     position: fixed;
 }

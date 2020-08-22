@@ -185,7 +185,7 @@ jQuery(document).ready(function () {
         }
         if(a > 920 && $('#navbar').hasClass('')){
             $('#backtogo').css('display', 'block');
-            $('#divul').css('transform', 'translateY(-100%)');
+            // $('#divul').css('transform', 'translateY(-100%)');
         }
         if (a > 920 && $('#navbar').hasClass('active_920')) {
             $('#navbar').removeClass('active_920');
