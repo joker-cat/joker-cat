@@ -13,30 +13,25 @@
     <title>立即預約</title>
 
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-        }
-
         * {
             box-sizing: border-box;
         }
 
-        #all-page {
-            display: flex;
-            justify-content: space-between;
-            position: relative;
+        body {
+            margin: auto;
+            padding: 0;
+            max-width: 1920px;
+            min-height: 100vh;
+        }
+
+        html {
+            overflow-y: scroll;
+            scroll-behavior: smooth;
         }
 
     </style>
 </head>
 <body>
-    <div id="all-page">
-
-        <!-- 左邊固定欄位 -->
 
         <div id="left">
             <div class="left-content">
@@ -58,10 +53,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- 左邊固定欄位 -->
-
-        <!-- 中間固定區塊 -->
         <div id="middle-all-section">
             <div id="banner"></div>
             <div id="middle-all-section-bg">
@@ -75,7 +66,7 @@
                     <span>着物のように、今すぐ着て、忘れられない思い出を楽しんでください</span>
                 </div>
             </div>
-            <!-- 變動內容區塊 -->
+
             <div id="middle-section">
                 <div class="middle-section-container">
 
@@ -308,7 +299,7 @@
                                     </div>
                                 </div>
                                 <!-- 備註 -->
-                                <button id="form-btn" class="btn btn-primary" type="submit">Submit form</button>
+                                <button id="form-btn" disabled="disabled" class="btn btn-primary" type="submit">Submit form</button>
 
                                 <div class="con-top-buttom"></div>
                         </form>
@@ -330,10 +321,10 @@
                         <span class="footer_font2">營業時間 | 9:00～19:00（※最晚歸還18:30）|</span>
                     </div>
                     <div id="container_footerright">
-                        <a href="./index.html"><span class="footer_font2">首頁 / ホーム</span></a><br />
-                        <a href="./index_A.html"><span class="footer_font2">和服介紹 / 着物紹介</span></a><br />
-                        <a href="./index_C.html"><span class="footer_font2">體驗流程 / 消費プロセス</span></a><br />
-                        <a href="./index_B.html"><span class="footer_font2">包套方案 / 体験セット</span></a><br />
+                        <a href="./index.html"><span class="footer_font2">首頁 / ホーム</span></a>
+                        <a href="./index_A.html"><span class="footer_font2">和服介紹 / 着物紹介</span></a>
+                        <a href="./index_B.html"><span class="footer_font2">包套方案 / 消費プロセス</span></a>
+                        <a href="./index_C.html"><span class="footer_font2">體驗流程 / 体験セット</span></a>
                         <a href="./index_D.html"><span class="footer_font2">常見問題 / よくある問題</span></a>
                     </div>
                 </div>
@@ -342,58 +333,51 @@
                 <span>Copyright © 2020 A組，僅供學生作品使用</span>
             </div>
         </div>
-    </div>
-    <!-- 包住中間所有內容的結尾 小心不要刪掉 -->
-    <!-- 變動內容區塊 -->
-
-    <!-- 右邊固定區塊 -->
-
-    <div id="navbar">
-        <div id="burger">
-            <img src="./index_E_img/burger.svg" style="width: 100%;" alt="">
-        </div>
-        <div id="backtogo">
-            <a href="#banner">
-                <img src="./index_img/backtotop.svg" alt="">
-            </a>    
-        </div>
-        <div id="navbar_logo"></div>
-        <div id="menu_container">
-            <div>
-                <img src="./index_E_img/n01-08.svg">
-                <div id="divul">
-                    <ul>
-                        <li><a href="./index.html">ホーム</a></li>
-                        <li><a href="./index_A.html">着物紹介</a></li>
-                        <li><a href="./index_B.html">消費プロセス</a></li>
-                        <li><a href="./index_C.html">体験セット</a></li>
-                        <li><a href="./index_D.html">よくある問題</a></li>
-                        <li>立即予約</li>
-                    </ul>
-                </div>
-                <div id="menu_icon">
-                    <div id="follow_us">
-                        <span>follow us</span>
+        <div id="navbar">
+            <div id="burger">
+                <img src="./index_E_img/burger.svg" style="width: 100%;" alt="">
+            </div>
+            <div id="burger_cover"></div>
+            <div id="backtogo">
+                <a>
+                    <img src="./index_E_img/backtotop.svg" alt="">
+                </a>
+            </div>
+            <div id="navbar_logo"></div>
+            <div id="menu_container">
+                <div>
+                    <img src="./index_E_img/n01-08.svg">
+                    <div id="divul">
+                        <ul>
+                            <li><a href="./index.html">ホーム</a></li>
+                            <li><a href="./index_A.html">着物紹介</a></li>
+                            <li><a href="./index_B.html">消費プロセス</a></li>
+                            <li><a href="./index_C.html">体験セット</a></li>
+                            <li><a href="./index_D.html">よくある問題</a></li>
+                            <li>立即予約</li>
+                        </ul>
                     </div>
-                    <div id="nav_icon">
-                        <img src="./index_E_img/fb.svg" alt="">
-                        <img src="./index_E_img/chat.svg" alt="">
-                        <img src="./index_E_img/tw.svg" alt="">
-                        <img src="./index_E_img/ig.svg" alt="">
+                    <div id="menu_icon">
+                        <div id="follow_us">
+                            <span>follow us</span>
+                        </div>
+                        <div id="nav_icon">
+                            <img src="./index_E_img/fb.svg" alt="">
+                            <img src="./index_E_img/chat.svg" alt="">
+                            <img src="./index_E_img/tw.svg" alt="">
+                            <img src="./index_E_img/ig.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
+            <div id="nav_allfont">
+                <span>銀座總店 |</span>
+                <span>075-354-9110</span>
+                <span>本店地址 | 東京都中央區銀座6-9-6銀座橫野總店大樓10F</span>
+                <span>電子郵箱 | wargo@gmail.com</span>
+                <span>營業時間 | 9:00～19:00（※最晚歸還18:30）</span>
+            </div>
         </div>
-        <div id="nav_allfont">
-            <span>銀座總店 |</span>
-            <span>075-354-9110</span>
-            <span>本店地址 | 東京都中央區銀座6-9-6銀座橫野總店大樓10F</span>
-            <span>電子郵箱 | wargo@gmail.com</span>
-            <span>營業時間 | 9:00～19:00（※最晚歸還18:30）</span>
-        </div>
-    </div>
-
-    <!-- 右邊固定區塊 -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

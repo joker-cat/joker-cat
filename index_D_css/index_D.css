@@ -38,16 +38,16 @@
 *, ::after, ::before {
 	box-sizing: border-box
 }
-html {
+/* html {
 	font-family: sans-serif;
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: transparent
-}
+} */
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 	display: block
 }
-body {
+/* body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-size: 1.3rem;
@@ -56,7 +56,7 @@ body {
 	color: #212529;
 	text-align: left;
 	background-color: #fff
-}
+} */
 [tabindex="-1"]:focus {
 	outline: 0!important
 }
