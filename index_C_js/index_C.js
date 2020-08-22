@@ -63,7 +63,7 @@ $('#backtogo').click(function () {
             $('#nav_allfont').css('opacity','1');
         }
         if(a <= 920 && $('#navbar').hasClass('')){
-            $('#divul').css('transform', 'translateY(100%)');
+            $('#divul').css('transform', 'translateY(-100%)');
         }
         
         if(a > 920 && $('#navbar').hasClass('active')){

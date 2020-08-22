@@ -159,7 +159,7 @@
 }
 @media(max-width:420px){
     #M_sec1-3_top_font .Middle_section1-3_fontset:nth-child(2) {
-         font-size: 12px;
+         font-size: 2vw;
          overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;
