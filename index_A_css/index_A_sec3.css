@@ -122,7 +122,7 @@
     #M_sec3_left_font {
         width: 100%;
         writing-mode: unset;
-        font-size: 1vw;
+        font-size: 2vw;
     }
     #M_sec3_righttop_imgcover {
         width: 15vw;
@@ -198,11 +198,11 @@
     }
     #M_sec3_righttop_imgcover {
         width: 40%;
-        font-size: 1vw;
+        font-size: 2vw;
     }
     #M_sec3_rightbottom_imgcover {
         width: 40%;
-        font-size: 1vw;
+        font-size: 2vw;
     }
     .M_sec3_right_font2 {
         font-size: 2vw;
