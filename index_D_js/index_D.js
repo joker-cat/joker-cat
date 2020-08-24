@@ -26,6 +26,9 @@ $('#burger').click(function () {
     if(a > 920 && $('#navbar').hasClass('active')){
         $('#divul').css('transform', 'translateX(-50%)');
     }
+    if (a <= 920 && $('#navbar').hasClass('')) {
+        $('#divul').css('transform', 'translate(0,-100%)');
+    }
     if ($('#burger>img').attr('src') == './index_D_img/burger.svg') {
         $('#burger>img').attr('src', './index_D_img/櫻花-10.png');
         $('#burger_cover').css('display','none');
