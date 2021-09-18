@@ -36,6 +36,7 @@
 #M_sec5_right_swiper {
     width: 70%;
     height: 100%;
+    overflow: hidden;
 }
 
 .swiper-container {
